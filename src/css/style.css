@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0
+}
+
+.mi-nav{
+  background-color: black;
+}
+
+.top{
+  margin-top: 10vh;
+}

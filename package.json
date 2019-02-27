@@ -1,0 +1,26 @@
+{
+  "name": "privado",
+  "version": "1.0.0",
+  "description": "// const url = 'http://www.omdbapi.com/?t=creed&plot=full&apikey=1fb43c3b' const url = 'http://www.omdbapi.com/?t=creed&plot=full&apikey=1fb43c3b'",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonhks/privado.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jonhks/privado/issues"
+  },
+  "homepage": "https://github.com/Jonhks/privado#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}
