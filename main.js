@@ -1,6 +1,64 @@
-const url = "http://www.omdbapi.com/?t="+encodeURI("Harry Potter")+"&apikey=3d0c4780"
+const artMovies = ["vertigo","Citizen Kane", "Tokyo Story","2001: A Space Odyssey", "Man With A Camera","In the Mood for Love","Rashomon"," Andrei Rublev","Mulholland Dr.","Stalker","Shoah","El Padrino II","Taxi Driver","El General","Metropolis","Psycho","Jeanne Dielman, 23 Commerce Quay, 1080 Brussels", "Satantango", "La Dolce Vita", " Pather Panchali" ]
+let baseDatos = {}
+const returnFilter = document.getElementById('return-filter');
 
-fetch(url)
 
-.then(response => response.json())
-.then(json => console.log(json))
+ for (let i = 0; i < artMovies.length; i++) {
+    const url = "http://www.omdbapi.com/?t="+ encodeURI(artMovies[i]) +"&apikey=3d0c4780"
+
+    fetch(url)
+
+   .then(response => response.json())
+    
+
+    .then(data => {
+
+        baseDatos = data
+        drawMovies(baseDatos)
+ })
+}
+
+drawMovies = () =>{
+    const sectionRoot = returnFilter
+    sectionRoot.innerHTML += `
+    <div>
+      <p>N°${baseDatos.Title}</p>
+      <img src="${baseDatos.Poster}"/>
+      <p>${baseDatos.Director}</p>
+      <p class="${baseDatos.Plot} tipoP">${baseDatos.Genre}</p>
+    </div>`
+}
+
+
+        // {
+        //     title= data.Title
+        //     poster =data.Poster
+        //     director = data.director
+        //     genre = data.Genre
+        //     plot= data.Plot
+        //     actors = data.Actors
+        // console.log(title)
+           
+            
+            
+        // })
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
