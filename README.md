@@ -14,9 +14,8 @@
 ## Preámbulo
 
 Con la aparición de plataformas para ver películas en la nube, como Netflix o
-Hulu, ver películas desde donde estés, comiendo lo que quieras
-(sin tener que pagar precios ridículos por pop-corn / pipoca / palomitas /
-canchita / cabritas), parando si es necesario, teniendo acceso a una cantidad
+Amazon Prime Video, ver películas desde donde estés, comiendo lo que quieras
+(sin tener que pagar precios ridículos por palomitas), parando si es necesario, teniendo acceso a una cantidad
 abrumadora de películas... ha cambiado la experiencia del usuario
 y modificado el mercado de las películas a nivel global.
 
@@ -26,8 +25,7 @@ y modificado el mercado de las películas a nivel global.
 
 Durante estos días crearás el producto que quieras alrededor del mundo
 de las películas. Puede ser un sitio que hable de las mejores películas
-latinoamericanas, uno que recomiende las películas recién estrenadas en Netflix
-u otros servicios de streaming, uno de recomendaciones de películas de terror,
+latinoamericanas, uno que recomiende las películas recién estrenadas en algún servicio de streaming, uno de recomendaciones de películas de terror,
 comedia ... o... ¡lo que quieran!
 
 ## Consideraciones generales
