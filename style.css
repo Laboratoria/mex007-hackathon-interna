@@ -6,11 +6,7 @@ nav{
     top: 0;
     left: 0;
 }
-img{
-    position: absolute;
-    left: 5%;
-    top: 5%;
-}
+
 .contact{
     background: gray;
     height: 25%;

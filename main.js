@@ -18,15 +18,15 @@ const returnFilter = document.getElementById('return-filter');
  })
 }
 
-drawMovies = () =>{
-    const sectionRoot = returnFilter
-    sectionRoot.innerHTML += `
-    <div>
-      <p>N°${baseDatos.Title}</p>
-      <img src="${baseDatos.Poster}"/>
-      <p>${baseDatos.Director}</p>
-      <p class="${baseDatos.Plot} tipoP">${baseDatos.Genre}</p>
-    </div>`
+const drawMovies = () =>{
+  let sectionRoot = `
+  <div>
+    <p>N°${baseDatos.Title}</p>
+    <img src="${baseDatos.Poster}"/>
+    <p>${baseDatos.Director}</p>
+    <p class="${baseDatos.Plot} tipoP">${baseDatos.Genre}</p>
+  </div>`
+  returnFilter.insertAdjacentHTML("beforeend", sectionRoot)
 }
 
 
