@@ -54,8 +54,11 @@ comedia ... o... ¡lo que quieran!
 
 ## Consideraciones técnicas
 
-- El diseño visual de los componentes es de libre elección,
-  sin embargo, si no quieren crearlo desde cero, pueden utilizar el que
-  propuso
-  [Walmart](https://drive.google.com/file/d/0B6GBtl-gO6LwaVprQkFqTGI2a28/view).
-- Deberán usar al menos un framework de css.
+- El diseño visual de los componentes es de libre elección.
+- Pueden usar algún framework de css si así lo deciden.
+
+## Sobre las presentaciones
+
+- Cada squad tendrá 5 minutos para presentar y 5 minutos para recibir preguntas.
+
+- Las personas que presentan en la primera presentación no deben ser las mismas de la presentación final.
