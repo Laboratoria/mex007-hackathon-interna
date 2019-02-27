@@ -1,0 +1,24 @@
+nav{
+    background: black;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+img{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+.contact{
+    background: gray;
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 75%;
+}
+.icons-contact{
+    display: inline;
+}
