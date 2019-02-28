@@ -7,7 +7,7 @@ const imbId = ['tt0816692', 'tt0083658', 'tt1454468', 'tt0499549',
               ];
 
 
-let dataMovieList = [];
+const dataMovieList = [];
 
 const dataMovie = () => {
  for (let i=0; i<imbId.length; i++) {
@@ -19,24 +19,30 @@ const dataMovie = () => {
     })
   } 
 };
-
+ 
 dataMovie();
 
 const printMovies = () => {
-  movieSciFi.innerHTML="";
+  movieSciFi.innerHTML=" ";
 
   dataMovieList.forEach(dataMovieList => {
     let nameMovies =
     `<div class="data"><h5>${dataMovieList.Title}</h5><p>${dataMovieList.Year}</p><img id="${dataMovieList.Title}" src="${dataMovieList.Poster}">
     </div>`;
-    movieSciFi.insertAdjacentHTML("beforeend", nameMovies);
+    // movieSciFi.insertAdjacentHTML("beforeend", nameMovies);
+    movieSciFi.innerHTML+=nameMovies;
   })
   };
    
   const filterCoincidence = () => {
     searchLett.addEventListener("keyup", () => {
+     
       let searchValue = document.getElementById("search").value;
-      printMovies(window.data.filterByConside(dataMovieList, searchValue));
+      console.log(dataMovieList)
+      const movieCoincide = window.data.filterByConside(dataMovieList, searchValue);
+
+      printMovies(movieCoincide);
+      console.log(movieCoincide);
     });
   }
 
