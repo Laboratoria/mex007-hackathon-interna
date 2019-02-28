@@ -37,5 +37,3 @@ const printFilms = () => {
     return printFilms;
     });
    };
-
-
