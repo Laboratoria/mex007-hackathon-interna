@@ -93,6 +93,7 @@ ul, ol {
 
 .nav li ul li {
     position:relative;
+    right: 37%;
 }
 
 .nav li ul li ul {
