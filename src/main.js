@@ -1,5 +1,4 @@
 const movieSciFi = document.getElementById('movies-sci-fi');
-let movieFilterByLetter  = document.getElementById('movies-sci-fi-filter');
 const searchLett = document.getElementById("search");
 
 const imbId = ['tt0816692', 'tt0083658', 'tt1454468', 'tt0499549',
@@ -8,7 +7,7 @@ const imbId = ['tt0816692', 'tt0083658', 'tt1454468', 'tt0499549',
               ];
 
 
-const dataMovieList = [];
+let dataMovieList = [];
 
 const dataMovie = () => {
  for (let i=0; i<imbId.length; i++) {
@@ -16,35 +15,29 @@ const dataMovie = () => {
     .then (response => response.json())
     .then (data => {
     dataMovieList.push(data);
-    // printMovies(dataMovieList);
+    printMovies(dataMovieList);
     })
   } 
 };
- 
+
 dataMovie();
 
-const printMovies = (dataMovieList) => {
-  // const movieFilterByLetter = movieSciFi;
-  movieSciFi.innerHTML= " ";
-  
-  dataMovieList.map((dataMovieList) => {
+const printMovies = () => {
+  movieSciFi.innerHTML="";
+
+  dataMovieList.forEach(dataMovieList => {
     let nameMovies =
     `<div class="data"><h5>${dataMovieList.Title}</h5><p>${dataMovieList.Year}</p><img id="${dataMovieList.Title}" src="${dataMovieList.Poster}">
     </div>`;
     movieSciFi.insertAdjacentHTML("beforeend", nameMovies);
-    // movieSciFi.innerHTML+=nameMovies;
   })
   };
    
   const filterCoincidence = () => {
     searchLett.addEventListener("keyup", () => {
-     
       let searchValue = document.getElementById("search").value;
-      printMovies( window.data.filterByConside(dataMovieList, searchValue));
-
-       
-      
+      printMovies(window.data.filterByConside(dataMovieList, searchValue));
     });
   }
 
-  filterCoincidence();
+  filterCoincidence(dataMovieList);
