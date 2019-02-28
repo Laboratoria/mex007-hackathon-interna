@@ -1,15 +1,9 @@
 window.movie = {
-filterData: (allMovies) => {
-    console.log(allMovies);
-
-    //for (const key in allMovies) {
-        //if (allMovies.hasOwnProperty(key)) {
-          //const element = allMovies[key];
-          
-//}
-
-//}
-//return newArray;
-},
+    filterByTitle: (allMovies, name2) => {
+        console.log(allMovies);
+        const filteringTitle = allMovies.filter(element => (element.Title.toLowerCase().match(name2.toLowerCase())));
+        return filteringTitle;
+      },
 //Esta llave cierra window
 }
+ 
