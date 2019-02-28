@@ -1,5 +1,17 @@
 # Kineteca
 
+# Parte 1
+
+##PPT
+[PPT](https://www.figma.com/proto/R3HlQy9b2gF2k5H7m1kr3ZqW/Untitled?node-id=26%3A179&scaling=scale-down&redirected=1)
+
+### FLOW First Mobile
+[FIGMA](https://www.figma.com/proto/R3HlQy9b2gF2k5H7m1kr3ZqW/Untitled?node-id=26%3A179&scaling=scale-down&redirected=1)
+
+
+
+
+
 ## Índice
 
 - [Preámbulo](#preámbulo)
