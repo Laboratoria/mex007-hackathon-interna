@@ -2,8 +2,6 @@ const cardMovie = document.getElementById('card-movie');
 
 //Star Wars: Episode IV, Cloud Atlas, Guardians of the Galaxy Vol. 2/ Avatar
 
-
-
 let idArray = ['Harry Potter and the Deathly Hallows: Part 2', 'Guardians of the Galaxy Vol. 2', 'Back to the Future', 'Avatar', 'Mulan', 'WALL·E', 'Toy Story', 'Back to the Future', 'Batman', 'Pacific Rim: Uprising', 'Die Hard', 'Frozen'];
 let allMovies = [];
 let movieData =[];
