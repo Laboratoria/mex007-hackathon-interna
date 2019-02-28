@@ -1,5 +1,5 @@
-if (window.location.pathname === '/src/views/login') {
-
+if (window.location.pathname === '/src/views/login' || window.location.pathname ==="/privado/src/views/login.html") {
+console.log(location.pathname)
   const signIn = document.getElementById('sign-in')
 
   signIn.addEventListener('click', () => {
@@ -59,15 +59,23 @@ firebase.auth().onAuthStateChanged(function (user) {
     // User is signed in.
     var user = firebase.auth().currentUser;
     console.log(user)
-    // if (location.pathname === '/src/views/login') {
-    //   location.href = '../views/muro.html'
-    // }
+    if (location.pathname === '/src/views/login' || window.location.pathname ==="/privado/src/views/login.html") {
+      location.href = './../views/muro.html'
+    }
     printPerfil(user)
 
   } else {
-    // if (window.location.pathname !== '/src/views/login') {
-    //   location.href = '../views/login.html'
-    // }
+    if (window.location.pathname !== '/src/views/login') {
+    console.log(window.location.pathname !== '/src/views/login')
+      location.href = './../views/login.html'
+    }
+  if (location.pathname === '/privado/src/views/login'){
+    console.log('esta en repo');
+     if (window.location.pathname !== '/privado/src/views/login') {
+      console.log(window.location.pathname !== '/privado/src/views/login')
+        location.href = './../views/login.html'
+      }
+  }
     console.log('no hay usuario logeado')
     // No user is signed in.
   }
