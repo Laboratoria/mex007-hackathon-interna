@@ -26,14 +26,14 @@ let idArray = ["Harry Potter and the Sorcerer's Stone", 'Harry Potter and the Go
     'Begin Again', 'Ready Player One', 'Logan', 'Interstellar', 'Ghost in the Shell', 'The Perks of Being a Wallflower',
     'Star Wars: Episode I - The Phantom Menace', 'Star Wars', 'Rogue One', 'Star Wars: Episode VII', 'Star Wars: Episode VIII - The Last Jedi', 
     'Solo: A Star Wars Story', 'Star Trek', 'Star Trek: Enterprise', 'Star Trek: Discovery '];
-
+let sortArray = idArray.sort()
 let allMovies = [];
 let movieData = [];
 let apiKey = '96fb7a85';
 const moviesData = () => {
-    for (let i = 0; i < idArray.length; i++) {
+    for (let i = 0; i < sortArray.length; i++) {
         //Fetch para traer la data del archivo lol.json
-        fetch('https://www.omdbapi.com/?t=' + idArray[i] + '&apikey=' + apiKey)
+        fetch('https://www.omdbapi.com/?t=' + sortArray[i] + '&apikey=' + apiKey)
             .then(response => response.json())
             .then(data => {
                 movieData = data;
