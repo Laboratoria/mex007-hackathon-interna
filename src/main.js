@@ -29,6 +29,7 @@ let allMovies = [];
 //for (let boton in buttonTypes){
     
 boton.addEventListener('click', (event) =>{
+    event.preventDefault();
     for(let i= 0; i< titles.length; i++) {
     fetch('http://www.omdbapi.com/?apikey=68f0eccc&t='+ titles[i])
     .then(res => res.json())
