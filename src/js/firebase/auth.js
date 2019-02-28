@@ -1,4 +1,4 @@
-if (window.location.pathname === '/src/views/login' || window.location.pathname ==="/privado/src/views/login.html") {
+if (window.location.pathname === '/src/views/login') {
 console.log(location.pathname)
   const signIn = document.getElementById('sign-in')
 
