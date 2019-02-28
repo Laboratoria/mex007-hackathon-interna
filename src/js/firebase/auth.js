@@ -108,6 +108,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 // });
 
 const logOut = () => {
+  console.log('salir')
   firebase.auth().signOut().then(function () {
     console.log('Sign-out successful');
 
@@ -117,6 +118,7 @@ const logOut = () => {
     // An error happened.
   });
 }
+
 logOutBtn.addEventListener('click', logOut)
 
 
