@@ -26,8 +26,8 @@ body {
 .btn-mood {
     cursor: pointer;
     min-width: 70px;
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -44,7 +44,7 @@ body {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     font-size: 1rem;
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
