@@ -1,17 +1,4 @@
 # Kineteca
-
-# Parte 1
-
-##PPT
-[PPT](https://www.figma.com/proto/R3HlQy9b2gF2k5H7m1kr3ZqW/Untitled?node-id=26%3A179&scaling=scale-down&redirected=1)
-
-### FLOW First Mobile
-[FIGMA](https://www.figma.com/proto/R3HlQy9b2gF2k5H7m1kr3ZqW/Untitled?node-id=26%3A179&scaling=scale-down&redirected=1)
-
-
-
-
-
 ## Índice
 
 - [Preámbulo](#preámbulo)
@@ -69,11 +56,5 @@ Nuestra aplicación tiene como punto focal la asociación que se tiene con un es
 ![Baja Fidelidad](src/images/IMG_20190227_200649.jpg)
 
 
-
-
-
-
-
-
 #### Prototipo de alta fidelidad
-Dentro del proyecto realizamos las dos visualizaciones requeridas: [Mobile](https://www.figma.com/proto/R3HlQy9b2gF2k5H7m1kr3ZqW/Untitled?node-id=26%3A179&scaling=scale-down&redirected=1)
+Dentro del proyecto realizamos FIRST_MOBILE: [Mobile](https://www.figma.com/proto/R3HlQy9b2gF2k5H7m1kr3ZqW/Untitled?node-id=26%3A179&scaling=scale-down&redirected=1)
