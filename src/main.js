@@ -1,5 +1,6 @@
+const buttonFilter = Array.from(document.getElementsByClassName("boton-type-chart"));
 const printData = document.getElementById('prueba');
-let kinema = [];
+let kinema = [ ];
 
 
 const movies = ["tt0892769","tt8155288","tt0437086","tt3513498","tt6513120","tt7634968","tt5715962","tt0487591","tt2043865","tt4112448","tt5259966","tt0071204","tt2676194","tt2059255","tt0412142","tt0108778","tt1183352","tt1454468","tt0473445","tt0039668","tt6794790","tt0245574","tt6155172","tt0185116","tt0245712", "tt1520211","tt0238784","tt0096697", "tt0460649", "tt8045690", "tt1608210", "tt0413573", "tt2707408", "tt2372162", "tt0229889", "tt2741602", "tt4158110", "tt0382271", "tt4154756","tt4633694", "tt6342284", "tt1727824", "tt2395427", "tt2250912", "tt0499549", "tt0910970", "tt1517451"] 
@@ -7,17 +8,16 @@ for(i=0;i<movies.length;i++){
     const url= "http://www.omdbapi.com/?i=" + movies[i] + "&apikey=91de21ce";
     fetch (url)
     .then (data => data.json())
-    .then(data => {
-        dataCinema = data;
-        kinema.push(dataCinema)
-        printFilms(dataCinema)
+    .then (data => {
+      kinema.push(data);
+      printFilms(kinema)
+    })
+   
+} 
     
-})
-}
-
-
-const printFilms = () => {
-    kinema.forEach(element => {
+const printFilms = (dataCinema) => {
+      printData.innerHTML = "";
+      dataCinema.map(element => {
       let genre = element.Genre;
       let infoCine = `<div class="casilla">
      <h6>${element.Title}</h6>
@@ -28,12 +28,17 @@ const printFilms = () => {
      <p>Plot: ${element.Plot}</p>
      <p>Actors: ${element.Actors}</p>
      <p>Country: ${element.Country}</p></button>`;
-    printData.insertAdjacentHTML("beforeend", infoCine);
-    return printFilms;
+     printData.insertAdjacentHTML("beforeend", infoCine);
     });
-   };
+};
 
-
-
-
-//alert("hola, no puedo hacer esto");
+const gettingType = (arrayofButtons) => {
+  arrayofButtons.map((buttonSelected) => {
+    buttonSelected.addEventListener("click", (event) => {
+       const buttonType = event.target.id;
+      const dataFiltered = window.allKinema.dataFiltered(data, buttonType);
+      printFilms(dataFiltered)
+    })
+  });
+};
+   
