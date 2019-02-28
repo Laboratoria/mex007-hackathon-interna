@@ -65,9 +65,12 @@ firebase.auth().onAuthStateChanged(function (user) {
     printPerfil(user)
 
   } else {
-    if (window.location.pathname !== '/src/views/login') {
-    console.log(window.location.pathname !== '/src/views/login')
-      location.href = './../views/login.html'
+    if (location.pathname === '/src/views/login'){
+      console.log('esta en repo');
+       if (window.location.pathname !== '/src/views/login') {
+        console.log(window.location.pathname !== '/src/views/login')
+          location.href = './../views/login.html'
+        }
     }
   if (location.pathname === '/privado/src/views/login'){
     console.log('esta en repo');
