@@ -1,3 +1,9 @@
+const hola = document.getElementById('hola')
+
+hola.addEventListener("click", () => {
+  alert("Sirvo");
+})
+
 const printData = document.getElementById('prueba');
 let kinema = [];
 
@@ -11,7 +17,6 @@ for(i=0;i<movies.length;i++){
         dataCinema = data;
         kinema.push(dataCinema)
         printFilms(dataCinema)
-    
 })
 }
 
@@ -32,8 +37,3 @@ const printFilms = () => {
     return printFilms;
     });
    };
-
-
-
-
-//alert("hola, no puedo hacer esto");
