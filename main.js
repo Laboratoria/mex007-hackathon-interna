@@ -1,4 +1,4 @@
- const artMovies = ["vertigo","Citizen Kane", "Tokyo Story","2001: A Space Odyssey", "Man With A Camera","In the Mood for Love","Rashomon"," Andrei Rublev","Mulholland Dr.","Stalker","Shoah","El Padrino II","Taxi Driver","El General","Metropolis","Psycho","Jeanne Dielman, 23 Commerce Quay, 1080 Brussels", "Satantango", "La Dolce Vita", " Pather Panchali" ]
+ const artMovies = ["vertigo","Citizen Kane", "Tokyo Story","2001: A Space Odyssey", "Man With A Camera","In the Mood for Love","Rashomon"," Andrei Rublev","Mulholland Dr.","Stalker","Shoah","El Padrino II","Taxi Driver","Metropolis","Psycho","Jeanne Dielman, 23 Commerce Quay, 1080 Brussels", "Satantango", "La Dolce Vita", " Pather Panchali" ]
 const returnFilter = document.getElementById('return-filter');
 const browser = document.getElementById("browser");
 let baseDatos = []
@@ -26,10 +26,10 @@ const drawMovies = (arrayPokemons) => {
     sectionRoot.innerHTML = "";
     arrayPokemons.map((baseDatos) => {
       let movieData = `
-      <div>
-        <p>${baseDatos.Title}</p>
-        <p>°${baseDatos.Actors}</p>
-        <img src="${baseDatos.Poster}"/>
+      <div class="card">
+        <p class="title">${baseDatos.Title}</p>
+        <p class="plot">°${baseDatos.Plot}</p>
+        <img class="poster" src="${baseDatos.Poster}"/>
         <p>${baseDatos.Director}</p>
       </div>`;
       sectionRoot.insertAdjacentHTML("beforeend", movieData)
