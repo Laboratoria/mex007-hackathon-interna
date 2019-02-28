@@ -5,7 +5,7 @@ let baseDatos = []
 
 
  for (let i = 0; i < artMovies.length; i++) {
-    const url = "http://www.omdbapi.com/?t="+ encodeURI(artMovies[i]) +"&apikey=3d0c4780"
+    const url = "https://www.omdbapi.com/?t="+ encodeURI(artMovies[i]) +"&apikey=3d0c4780"
 
     fetch(url)
 
