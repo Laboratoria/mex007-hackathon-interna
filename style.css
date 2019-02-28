@@ -7,6 +7,7 @@ nav{
     left: 0;
 }
 
+
 .contact{
     background: gray;
     height: 25%;
@@ -15,6 +16,6 @@ nav{
     left: 0;
     top: 75%;
 }
-.icons-contact{
+.icons{
     display: inline;
 }
