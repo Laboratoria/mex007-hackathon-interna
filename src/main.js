@@ -46,4 +46,4 @@ const printMovies = () => {
     });
   }
 
-  filterCoincidence(dataMovieList);
+  filterCoincidence();
