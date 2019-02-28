@@ -1,3 +1,53 @@
+#header {
+    margin:auto;
+    width:500px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ul, ol {
+    list-style:none;
+}
+
+.nav {
+    width: 29%;
+
+    margin-top: -43px;
+    margin-left: 70%
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li {
+    background-color:#000;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+.nav li:hover {
+    background-color:#434343;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
 nav{
     background: black;
     width: 100%;
@@ -5,20 +55,15 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-}
-img{
-    position: absolute;
-    left: 5%;
-    top: 5%;
-}
-.contact{
-    background: gray;
-    height: 25%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 75%;
-}
-.icons-contact{
-    display: inline;
-}
+ }
+
+ #browser{
+    border-radius: 10px;
+    width: 52%;
+    height: 31px;
+    padding-left: 2%;
+    margin-left: 6%;
+
+ }
+
+ 
