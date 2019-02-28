@@ -1,6 +1,14 @@
+*{
+    margin: 0; 
+}
+
+body {
+    background-color: #50c3c6;
+}
 #card-movie {
     width: 85%;
     margin: 0 auto;
+    background-color: pink;
 }
 
 .movie-container{
@@ -18,7 +26,7 @@
     background-size: cover;
 }
 
-img {
+#posters {
     width: 100%;
     position: relative;
 }
@@ -28,4 +36,25 @@ img {
     color: blue;
     height: 35px; 
     text-align: center;
+}
+
+#menu {
+    width: 85%;
+    background-color: blue;
+    margin: 0 auto;
+    margin-bottom: 10px; 
+    margin-top: 10px; 
+    padding: 0px; 
+    padding-left: 2%;
+}
+
+.buttons-menu{
+    width: 21%;
+    background-color: red;
+    display: inline-block;
+    margin: 0px 1% 1%;
+}
+
+.img-button {
+    width: 100%;
 }

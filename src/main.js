@@ -50,7 +50,7 @@ const moviesData = () => {
 const printData = (allMovies) => {
     cardMovie.innerHTML = " ";
     allMovies.forEach(movies => {
-        let result = `<div class="movie-container"> <div class="background-poster"> <img src="${movies.Poster}"> </div>
+        let result = `<div class="movie-container"> <div class="background-poster"> <img id="posters" src="${movies.Poster}"> </div>
       <div id="title">${movies.Title}</div></div>`;
         cardMovie.insertAdjacentHTML("beforeend", result);
     });
