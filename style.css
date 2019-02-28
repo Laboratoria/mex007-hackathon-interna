@@ -4,6 +4,36 @@ html,body{
 .logo{
     margin-left: 5%;
 }
+.imagen-top{
+    width:100%;
+    height: 33em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.image-pulp-fiction{
+    background-image: url(http://images.fanpop.com/images/image_uploads/Pulp-Fiction-poster-quentin-tarantino-75036_500_495.jpg);
+
+}
+.image-the-shining{
+    background-image: url(https://http2.mlstatic.com/poster-the-shining-el-resplandor-tamano-35x50-cm-D_NQ_NP_574115-MLA25131008966_102016-F.jpg);
+
+
+}
+.image-mad-max{
+    background-image: url(https://imagessl2.casadellibro.com/m/ig/2/1271422.jpg);
+
+}
+.image-trainspotting{
+    background-image: url(https://pics.filmaffinity.com/trainspotting-196178076-large.jpg);
+
+}
+.image-the-fight-club{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMjJmYTNkNmItYjYyZC00MGUxLWJhNWMtZDY4Nzc1MDAwMzU5XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg);
+
+}
+
 nav i{
     color: gray;
     position: absolute;
@@ -21,7 +51,7 @@ nav i{
     z-index: 5;
 
 }
-    .card{
+    .movie-card{
         background-color: white;
         border-style: outset;
         border-radius: 10px;

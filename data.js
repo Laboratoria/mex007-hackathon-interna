@@ -1,8 +1,13 @@
 window.data = {
-filterInput: (baseDatos, letter) => {
+filterInput: (dataMovies, letter) => {
 
-    const search = baseDatos.filter(baseDatos => (baseDatos.Title.toLowerCase().match(letter.toLowerCase()) || baseDatos.Director.toLowerCase().match(letter.toLowerCase())));
+    const search = dataMovies.filter(dataMovies => (dataMovies.Title.toLowerCase().match(letter.toLowerCase()) || dataMovies.Director.toLowerCase().match(letter.toLowerCase())));
     return search;
 
+  },
+
+  filterData: (dataMovies, optionFilter) => {
+    const arrayFilteredPokemons = dataMovies.filter(dataMovies => dataMovies.Genre.includes(optionFilter))
+    return arrayFilteredPokemons
   },
 }
