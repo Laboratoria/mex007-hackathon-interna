@@ -1,64 +1,67 @@
-# "Hackathon" de final de _Common Core_, películas
+# Kineteca
 
 ## Índice
 
 - [Preámbulo](#preámbulo)
-- [Resumen del proyecto](#resumen-del-proyecto)
-- [Consideraciones generales](#consideraciones-generales)
-- [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-- [Parte obligatoria](#parte-obligatoria)
-- [Consideraciones técnicas](#consideraciones-técnicas)
+- [Descripción](#resumen-del-proyecto)
+- [Definición del producto](#definición-del-producto)
 
 ---
 
 ## Preámbulo
 
-Con la aparición de plataformas para ver películas en la nube, como Netflix o
-Amazon Prime Video, ver películas desde donde estés, comiendo lo que quieras
-(sin tener que pagar precios ridículos por palomitas), parando si es necesario, teniendo acceso a una cantidad
-abrumadora de películas... ha cambiado la experiencia del usuario
-y modificado el mercado de las películas a nivel global.
+El streaming es un concepto utilizado para definir una forma de consumir contenido a través de la red sin la necesidad de tener que descargarlo. Se trata de utilizar la tecnología y las redes para emitir contenido almacenado en la nube en dispositivos como ordenadores, smartphones y tablets a la vez que se visualiza.
 
-![Pelis](https://media.giphy.com/media/NipFetnQOuKhW/giphy.gif)
+En la actualidad existen multitud de portales destinados a emitir contenido anónimo, de empresas y de particulares, tanto en directo como en diferido.
+
+El contenido que se consume vía streaming es, en su práctica totalidad, música y vídeo, si bien, también podemos encontrar documentos de texto, pdfs, diapositivas y un largo etcétera. Todo lo que podamos crear lo podemos distribuir de esta manera, incluyendo ya partidos de fútbol, mítines, reuniones, eventos con celebridades…
+
 
 ## Resumen del proyecto
 
-Durante estos días crearás el producto que quieras alrededor del mundo
-de las películas. Puede ser un sitio que hable de las mejores películas
-latinoamericanas, uno que recomiende las películas recién estrenadas en algún servicio de streaming, uno de recomendaciones de películas de terror,
-comedia ... o... ¡lo que quieran!
+En este proyecto **se construyó una _página web_ para visualizar un
+_conjunto (set) de datos_** que se adecúo a lo que descubrimos que nuestro usuario
+necesitaba.
 
-## Consideraciones generales
+Una vez que definimos nuestra área de interés, entiendimos quién es nuestro usuario y qué necesitabamos saber o ver exactamente, posteriormente construimos la interfaz que le ayudó a interactuar y entender mejor esos datos.
+Como entregable final tenemos una página web que permite **visualizar la data,
+filtrarla, ordenarla y hacer algún cálculo agregado**.
 
-- Este proyecto se debe resolver en equipos de hasta 4 personas.
-- Usa la API de [OMDB](http://www.omdbapi.com/) (The Open Movie Database).
-- Tiempo para completar el reto: 3 días.
-- Habrán dos presentaciones, una a la mitad de la _hackathon_ y otra al final.
+## Definición del producto
+### Contextualización del Proyecto
+Hoy en día se cuenta con diversas plataformas en las cuales se puede visualizar películas vía streaming como lo son Netflix o Blim, lo cuál no permite observar gran variedad de películas en cualquier lugar donde tengamos dispositivos e internet.
 
-## Objetivos de aprendizaje
+Kineteca es una aplicación que ayuda al usuario a tener una biblioteca con recomendaciones de otras personas que cuenten con la aplicación y así mismo el mismo usuario puede realizar recomendaciones a otros usuarios a través de su perfil de una manera más accesible y dinámica sin que un usuario tenga acceso a las películas que ya ha visto anteriormente o sitios que ha visitado com sucede en Netflix que al compartir tu cuenta otras personas pueden acceder a tus películas ya observadas e incluso recomendacones porque ya viste ciertas películas. Esta aplicación tiene una biblioteca cerca de 1,000 películas a las cuales puede acceder el usuario y agregar a su lista de recomendados.
 
-- Enfrentarte a un reto de corta duración en el que pongas
-  en práctica todo lo aprendido hasta ahora.
-- Que sigas desarrollando tus habilidades de trabajo en equipo. Mientras más
-  personas en un equipo de trabajo, mayor complejidad para: tener un
-  entendimiento común, seguir el flujo de trabajo, buscar consensos, etc.
+### Historias de usuario
 
-## Parte Obligatoria
 
-- Todo el planeamiento del trabajo deberá ser detallado en un repositorio único
-  por _squad_ en el que se presente el _planning_, el _research_, los _sketches_
-  y las inspiraciones utilizadas para definir el producto.
-- Además, deberás detallar en el archivo _readme_, qué hizo cada una en el
-  proyecto.
-- El producto deberá presentarse publicado en github pages.
+![Historias de usuario](src/images/IMG_20190227_200628.jpg)
+1.- Yo como USUARIO quiero poder visualizar las películas que se han estrenado en el último año.
 
-## Consideraciones técnicas
+    -Criterios de Aceptación:
 
-- El diseño visual de los componentes es de libre elección.
-- Pueden usar algún framework de css si así lo deciden.
+    PANTALLA DE INICIO: En caso de que el usuario al ingresar a nuestra página pueda obrservar de manera dinámica las películas más taquilleras del último año, mostrando elementos relacionados con la película.
 
-## Sobre las presentaciones
+### Diseño de la Interfaz de Usuario
 
-- Cada squad tendrá 5 minutos para presentar y 5 minutos para recibir preguntas.
+Nuestra aplicación tiene como punto focal la asociación que se tiene con un estili minimalista y neutro para mantener una interfaz limpia para mantener la atención de los USUARIOS en las películas.
 
-- Las personas que presentan en la primera presentación no deben ser las mismas de la presentación final.
+#### LOGO
+![Logo](src/images/IMG_20190227_200633.jpg)
+
+
+#### Prototipo de baja fidelidad
+![Baja Fidelidad](src/images/IMG_20190227_200640.jpg)
+![Baja Fidelidad](src/images/IMG_20190227_200655.jpg)
+![Baja Fidelidad](src/images/IMG_20190227_200649.jpg)
+
+
+
+
+
+
+
+
+#### Prototipo de alta fidelidad
+Dentro del proyecto realizamos las dos visualizaciones requeridas: [Mobile](https://www.figma.com/proto/R3HlQy9b2gF2k5H7m1kr3ZqW/Untitled?node-id=26%3A179&scaling=scale-down&redirected=1)
