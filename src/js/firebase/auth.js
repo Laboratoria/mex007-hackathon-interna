@@ -59,15 +59,15 @@ firebase.auth().onAuthStateChanged(function (user) {
     // User is signed in.
     var user = firebase.auth().currentUser;
     console.log(user)
-    if (location.pathname === '/src/views/login') {
-      location.href = '../views/muro.html'
-    }
+    // if (location.pathname === '/src/views/login') {
+    //   location.href = '../views/muro.html'
+    // }
     printPerfil(user)
 
   } else {
-    if (window.location.pathname !== '/src/views/login') {
-      location.href = '../views/login.html'
-    }
+    // if (window.location.pathname !== '/src/views/login') {
+    //   location.href = '../views/login.html'
+    // }
     console.log('no hay usuario logeado')
     // No user is signed in.
   }
