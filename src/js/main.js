@@ -1,9 +1,3 @@
-const hola = document.getElementById('hola')
-
-hola.addEventListener("click", () => {
-  alert("Sirvo");
-})
-
 const printData = document.getElementById('prueba');
 let kinema = [];
 
