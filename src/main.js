@@ -2,6 +2,7 @@ const movieSciFi = document.getElementById('movies-sci-fi');
 const movieFilterByLetter = document.getElementById('movies-sci-fi-filter');
 const searchLett = document.getElementById("search");
 const topTenOrder = document.getElementById("imdbRating");
+const movieRelease = document.getElementById("Year");
 const dataMovieList = [];
 const imbId = ['tt0816692', 'tt0083658', 'tt1454468', 'tt0499549',
   'tt0106062', 'tt0079501', 'tt0796366', 'tt0888496',
@@ -51,7 +52,13 @@ topTenOrder.addEventListener("click", () => {
 
 })
 
+//Funcion para filtrar por año
+movieRelease.addEventListener("click", () => {
+    arrayMovie = window.data.filterbyYear(dataMovieList);
+    printMovies(arrayMovie);
+})
+
 //Invocando funciónes
 dataMovie();
 filterCoincidence();
-getSelectOrder(arrayOrder);
+

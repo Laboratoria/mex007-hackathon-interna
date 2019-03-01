@@ -9,9 +9,14 @@ filterByConside: (dataMovieList, letterValue) => {
 },
 
 
-
 orderData: (dataMovie) => {
 
     return dataMovie.sort((a, b) => (parseFloat(b.imdbRating) - parseFloat(a.imdbRating)));;
-    }
-};
+},
+
+filterbyYear: (dataMovie) => {
+    const filterDataMovie = dataMovie.filter(data =>(data.Year.includes('2014')));
+    return filterDataMovie;
+} 
+}
+   
