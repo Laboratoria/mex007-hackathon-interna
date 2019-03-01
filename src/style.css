@@ -1,8 +1,18 @@
+* {
+  background-color: black;
+}
+
 @font-face {
     font-family: Potra;
     font-style: normal;
     font-weight: normal;
     src: url(../src/assets/fonts/Potra.ttf);
+    color: antiquewhite;
   }
+
+.container {
+  box-sizing: border-box;
+  width: 50%;
+}
 
   
