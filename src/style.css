@@ -1,35 +1,44 @@
-
-@font-face {
-    font-family: Potra;
-    font-style: normal;
-    font-weight: normal;
-    src: url(../src/assets/fonts/Potra.ttf);
-    color: antiquewhite;
-  }
-
-
 header{
   text-align: center;
-background: #50576a;
-width: 100%;
-height: auto;
-padding: 3%;
+  background: #50576a;
+  padding: 3%;
+ display: inline-block;
+ vertical-align: top;
+ position: fixed;
+ top: 0;
+ left: 0;
 }
 
-section{
+body{
   background: rgba(24,30,44,1);
 background: -moz-linear-gradient(-45deg, rgba(24,30,44,1) 0%, rgba(84,223,218,1) 100%);
-/*background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(24,30,44,1)), color-stop(100%, rgba(84,223,218,1)));*/
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(24,30,44,1)), color-stop(100%, rgba(84,223,218,1)));
 background: -webkit-linear-gradient(-45deg, rgba(24,30,44,1) 0%, rgba(84,223,218,1) 100%);
 background: -o-linear-gradient(-45deg, rgba(24,30,44,1) 0%, rgba(84,223,218,1) 100%);
 background: -ms-linear-gradient(-45deg, rgba(24,30,44,1) 0%, rgba(84,223,218,1) 100%);
 background: linear-gradient(135deg, rgba(24,30,44,1) 0%, rgba(84,223,218,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#181e2c', endColorstr='#54dfda', GradientType=1 );
+background-attachment: fixed;
 }
-span{
-  text-align: center;
+nav{
+  margin-left: 6%;
+  margin-block-start: -21%;
+  position: fixed;
   }
 
+  section{
+    margin-block-start: 50%;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+  }
+
+footer{
+  background: #50576a;
+  width: auto;
+  height: 100%;
+  text-align: center;
+}
 .logo{
   width: 70%;
   height:auto;
@@ -37,11 +46,23 @@ span{
 
 .search{
   text-align: center;
-background: #848484;
-opacity: .5;
+opacity: 0.55;
+width: 90%;
+border-radius: 5%;
 }
 
 .container {
   box-sizing: border-box;
   width: 50%;
+}
+
+.btn{
+    background: #50576a;
+}
+
+.nav__item{
+  color: white;
+text-decoration: blink;
+font-family: sans-serif;
+    padding: 4%;
 }

@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Sci-Filos</title>
 
   </head>
   <body>
     <div id="root">
       <!-- Sección que contiene el logo de la app y el buscador -->
-      <header>
+      <header class="fixed-top">
         <img src="assets/images/sciFilos.png" alt="Sci-Filos" class="logo">
-        <input type="search" class="search" id="search"/>
       </header>
-      
+
+      <nav class="search">    <input type="search" class="search" id="search" placeholder="BÚSQUEDA" /> </nav>
+
 
       <section id="movies-sci-fi-filter">
       </section>
@@ -70,16 +71,15 @@
 
 
 
-<footer>
-  <nav class="menu">
+<footer class="fixed-bottom">
 
-      <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary btn-lg"><a href="#recommendation" class="nav__item current" img src="./assets/images/home.png">INICIO</a></button>
-          <button type="button" class="btn btn-secondary btn-lg"><a href="#top" class="nav__item select-topic" id="imdbRating">TOP</a></button>
-          <button type="button" class="btn btn-secondary btn-lg"><a href="#new" class="nav__item select-topic" id="Year">PRÓXIMAMENTE</a></button>
+     <div class="btn-group" role="group" aria-label="Basic example">
+        <a href="#recommendation" class="nav__item">INICIO</a>
+        <a href="#top" class="nav__item" id="imdbRating">TOP</a><!--  <button type="button" class="btn"></button>-->
+        <button type="button" class="btn"><a href="#new" class="nav__item" id="Year">PRÓXIMAMENTE</a></button>
 
       </div>
-  </nav>
+
 </footer>
   </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
