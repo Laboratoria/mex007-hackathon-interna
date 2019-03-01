@@ -42,8 +42,8 @@ const printMoviesTop = (dataMovieList) => {
 
   dataMovieList.map((dataMovieList) => {
     let nameMovies =
-      `<div class="data"><img id="${dataMovieList.Title}" src="${dataMovieList.Poster}"><h5>${dataMovieList.Title}</h5><p>${dataMovieList.Year}</p>
-    <p>${dataMovieList.imdbRating}</p>
+      `<div class="data"><img id="${dataMovieList.Title}" src="${dataMovieList.Poster}"><h5>Title: ${dataMovieList.Title}</h5><p>Year: ${dataMovieList.Year}</p>
+    <p>Rating: ${dataMovieList.imdbRating}</p>
     </div>`;
     sectionTop.insertAdjacentHTML("beforeend", nameMovies);
 
@@ -56,7 +56,7 @@ const printMoviesPrem = (dataMovieList) => {
   dataMovieList.map((dataMovieList) => {
     let nameMovies =
       `<div class="data"><img id="${dataMovieList.Title}" src="${dataMovieList.Poster}">
-      <h5>${dataMovieList.Title}</h5><p>${dataMovieList.Year}</p>
+      <h5>Title: ${dataMovieList.Title}</h5><p>Year: ${dataMovieList.Year}</p>
     
     </div>`;
     sectionPremier.insertAdjacentHTML("beforeend", nameMovies);
@@ -70,7 +70,8 @@ const printMoviesFilter = (dataMovieList) => {
   dataMovieList.map((dataMovieList) => {
     let nameMovies =
       `<div class="data"><img id="${dataMovieList.Title}" src="${dataMovieList.Poster}">
-      <h5>${dataMovieList.Title}</h5><p>${dataMovieList.Year}<br>${dataMovieList.imdbRating}</p>
+      <h5>Title: ${dataMovieList.Title}</h5><p>Year: ${dataMovieList.Year}<br>Sinopsis: ${dataMovieList.Plot}
+      </p>
     
     </div>`;
     dataFilter.insertAdjacentHTML("beforeend", nameMovies);
