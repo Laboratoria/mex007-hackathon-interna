@@ -5,22 +5,22 @@ Información general: pagina web
 
 Un poco de contexto:
 
-    Los servicios VOD como Netflix nos han dado una nueva forma de ver la TV, una personalizada en la que el usuario elige qué quiere ver en vez de que le impongan un contenido inamovible como sucede en los canales convencionales.
+Los servicios VOD como Netflix nos han dado una nueva forma de ver la TV, una personalizada en la que el usuario elige qué quiere ver en vez de que le impongan un contenido inamovible como sucede en los canales convencionales.
 
-    El usuario ha cambiado su forma de consumir contenido audiovisual. Primero por la mejora de la tecnología permite ver películas en 4K en casa, con una calidad en ocasiones mejor que el propio cine. Y segundo porque estas plataformas están sabiendo adaptarse a las necesidades de los consumidores ya que son capaces de abordar proyectos rupturistas e innovadoras a la hora de contar historias y plantear la difusión de las mismas.
+El usuario ha cambiado su forma de consumir contenido audiovisual. Primero por la mejora de la tecnología permite ver películas en 4K en casa, con una calidad en ocasiones mejor que el propio cine. Y segundo porque estas plataformas están sabiendo adaptarse a las necesidades de los consumidores ya que son capaces de abordar proyectos rupturistas e innovadoras a la hora de contar historias y plantear la difusión de las mismas.
 
-    Al abrir el espectro de posibilidades, el usuario se enfrente no solo a diferentes ventajas, si no  a diferentes problemáticas entre ellas decidir ¿Que quiero ver?, ya que al encontrar un contenido diverso y en constante cambio, es abrumadora  la decisión que tiene que enfrentar cada vez que quiere disfrutar algo del gran acervo visual con la que cuentan estas plataformas.
+Al abrir el espectro de posibilidades, el usuario se enfrente no solo a diferentes ventajas, si no  a diferentes problemáticas entre ellas decidir ¿Que quiero ver?, ya que al encontrar un contenido diverso y en constante cambio, es abrumadora  la decisión que tiene que enfrentar cada vez que quiere disfrutar algo del gran acervo visual con la que cuentan estas plataformas.
 
-    Ante este paradigma nace MoviePop una aplicación que ofrece una manera fácil, dinámica y amigable para el usuario,  donde pueda consultar la sinopsis de los títulos que ofrece nuestro catálogo y así poder  decidir  qué película quiere ver ya sea por género, director, actores o los diversos filtros que ofrecemos dentro de la aplicación.
+Ante este paradigma nace MoviePop una aplicación que ofrece una manera fácil, dinámica y amigable para el usuario,  donde pueda consultar la sinopsis de los títulos que ofrece nuestro catálogo y así poder  decidir  qué película quiere ver ya sea por género, director, actores o los diversos filtros que ofrecemos dentro de la aplicación.
 
 
 punto fuerte de su empresa o producto
 
-       Ofrece un espacio sencillo de manipular, donde el usuario pueda buscar por medio de un filtro (genero y nombre), las películas de su preferencia.
+Ofrece un espacio sencillo de manipular, donde el usuario pueda buscar por medio de un filtro (genero y nombre), las películas de su preferencia.
 
 objetivos que pretende conseguir el producto
 
-       Generar una plataforma para que el usuario pueda filtrar y almacenar por medio de listas las películas de su preferencia.
+Generar una plataforma para que el usuario pueda filtrar y almacenar por medio de listas las películas de su preferencia.
 
 
 productos o servicios:
