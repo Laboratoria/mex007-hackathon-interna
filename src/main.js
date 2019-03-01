@@ -1,3 +1,8 @@
+// let titles = [ 
+//   { action : {title:'robocop', title:'mean-girls', title:'fast-and-furious' }},
+//   { comedy : {title:'frozen', title:'mean-girls', title:'fast-and-furious' }}
+// ];
+
 
 const buttonTypes = Array.from(document.getElementsByClassName('btn-mood'));//tomar botones 4  en una sola clase
 //console.log(buttonTypes);
@@ -12,13 +17,11 @@ const buttonTypes = Array.from(document.getElementsByClassName('btn-mood'));//to
           let buscar = result[genre]
           console.log(buscar)
           console.log(genre)
-
         // const filtered =  window.movies.filterGenre(result, genre)
         console.log(filtered)
         })
        }
 });
-
 */
 const resultsMovies = document.getElementById('results');
 const boton = document.getElementById('action');
@@ -36,13 +39,13 @@ boton.addEventListener('click', (event) =>{
         .then (data => {
           allMovies.push(data) 
           console.log(allMovies);
+          resultadoImg (allMovies);   
         })
     } 
-    print (allMovies);      
+      
 });
-
-
-const print = (allMovies) => {
+const resultadoImg = (allMovies) => {
+  resultsMovies.innerHTML="";
 allMovies.forEach(element => {
     const arrayProperties= `<img src="${element.Poster}"> <p> ${element.Title}${element.Runtime}</p>`
     resultsMovies.insertAdjacentHTML('beforeend', arrayProperties);
