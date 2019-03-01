@@ -51,7 +51,7 @@ for(let i= 0; i< titles.length; i++) {
 const resultadoImg = (allMovies) => {
  resultsMovies.innerHTML="";
  allMovies.forEach(element => {
-   const arrayProperties= `<img src="${element.Poster}"> <p> ${element.Title}${element.Runtime}</p>`
+   const arrayProperties= `<div><img src="${element.Poster}"> <p> ${element.Title}${element.Runtime}</p></div>`
    resultsMovies.insertAdjacentHTML('beforeend', arrayProperties);
 });
 }
