@@ -6,16 +6,11 @@ let resultsMovies = document.getElementById('results');
 const btn = document.getElementById('btn');
 const searcher = document.getElementById('searcher');
 
-
- 
 btn.addEventListener ('click' , () => {
   let searcherValue = searcher.value;
   console.log(searcherValue);
   window.movies.searchByName(allMovies, searcherValue)
 })
-
-
-
 
 for(let i= 0; i< titles.length; i++) {
     fetch('https://www.omdbapi.com/?apikey=68f0eccc&t='+ titles[i])
@@ -32,9 +27,7 @@ for(let i= 0; i< titles.length; i++) {
       console.log(genre)
        let r = window.movies.filterGenre(allMovies , genre);
        resultadoImg (r)
-  
 })};
-
 const resultadoImg = (allMovies) => {
   resultsMovies.innerHTML="";
  allMovies.forEach(element => {

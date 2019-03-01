@@ -6,25 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Movie mood</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav></nav>
+
+    <header class="header">
+        <h1 class="title">Movie Mood</h1>
+        <nav> 
+        </nav>
     </header>
+    <main class="main">
     <section class="filter-movie">
-        <h1>Movies</h1>
+        <h3>¡Cuáles tu mood hoy!</h3>
         <input id= "searcher" class="general-filter" type="text">
         <button id= 'btn'></button>
-        <a id="Romance" class="btn-mood">Romantico</a>
-        <a id="Comedy" class="btn-mood" >Alegre</a>
-        <a id="Adventure" class="btn-mood" >futurista</a>
-        <a id="Horror" class="btn-mood" >Valiente</a>
-        <a id="Action" class="btn-mood" >Aventurero</a>
-        <a id="Drama" class="btn-mood" >Nostalgico</a>
-        
-        
-        
+        <div class="mood">
+            <a id="Romance" class="btn-mood romance">Romantico</a>
+            <a id="Comedy" class="btn-mood comedy" >Alegre</a>
+        </div>
+        <div class="mood">
+            <a id="Adventure" class="btn-mood futurista" >futurista</a>
+            <a id="Horror" class="btn-mood horror" >Valiente</a>
+        </div>
+        <div class="mood">
+            <a id="Action" class="btn-mood aventurero" >Aventurero</a>
+            <a id="Drama" class="btn-mood drama" >Nostalgico</a>
+        </div>
     </section>
+    </main>
     <section id= "results"></section>
     <script src="main.js"></script>
     <script src="data.js"></script>
