@@ -43,7 +43,7 @@ const printMoviesTop = (dataMovieList) => {
   dataMovieList.map((dataMovieList) => {
     let nameMovies =
       `<div class="data"><img id="${dataMovieList.Title}" src="${dataMovieList.Poster}"><h5>Title: ${dataMovieList.Title}</h5><p>Year: ${dataMovieList.Year}</p>
-    <p>Rating: ${dataMovieList.imdbRating}</p>
+    </p>
     <div id='rating'>
     <span></span>
     <span></span>

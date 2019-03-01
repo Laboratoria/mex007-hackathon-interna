@@ -11,7 +11,7 @@ filterByConside: (dataMovieList, letterValue) => {
 
 orderData: (dataMovie) => {
 
-    if (dataMovie.imdbRating !== "N/A"){
+    if (dataMovie.Year !== '2019' && dataMovie.imdbRating !== "N/A"){
 
     return dataMovie.sort((a, b) => (parseFloat(b.imdbRating) - parseFloat(a.imdbRating)));;
     }
