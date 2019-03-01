@@ -46,8 +46,8 @@ Personas de 18 a 45 años que comienzan, quieren y buscan la manera de adentrars
 El objetivo es lograr que la interacción sea intuitiva, fácil de usar y que logre alcanzar a introducir efectivamente a nuestro usuario al mundo del Cine de Arte.
 
 ##Fotos de los bocetos hechos en hoja con bolígrafo
-![GitHub Boceto](src/prototipos/boceto1.jpg)
-![GitHub Boceto](src/prototipos/boceto2.jpg)
+![GitHub Boceto](src/prototipos/prototipo1.jpg)
+![GitHub Boceto](src/prototipos/prototipo2.jpg)
 ![GitHub Boceto](src/prototipos/boceto3.jpg)
 
 ##Prototipo de alta fidelidad (User Testing)
