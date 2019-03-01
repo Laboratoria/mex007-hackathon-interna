@@ -14,7 +14,8 @@ const resultadoImg = () => {
  </header>`
     r.forEach(element => { 
       const arrayProperties= 
-     `<main class="main"><div><img src="${element.Poster}"><br> <p> Titulo: ${element.Title}<br> Tiempo: ${element.Runtime}</p></div>`
+      `<div id= "plot" ><p>Plot: ${element.Plot}</p></div><div id= "im"><img src="${element.Poster}"> <p> Título: ${element.Title} Duración: ${element.Runtime}</p></div>`
+   //   `<main class="main"><div><img src="${element.Poster}"><br> <p> Titulo: ${element.Title}<br> Tiempo: ${element.Runtime}</p></div>`
       resultsMovies.insertAdjacentHTML('beforeend', arrayProperties); 
       console.log(resultsMovies) 
    });
