@@ -15,7 +15,7 @@ orderData: (dataMovie) => {
 },
 
 filterbyYear: (dataMovie) => {
-    const filterDataMovie = dataMovie.filter(data =>(data.Year.includes('2014')));
+    const filterDataMovie = dataMovie.filter(data =>(data.Year.includes('2019')));
     return filterDataMovie;
 } 
 }
