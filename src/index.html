@@ -12,6 +12,7 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <title>Sci-Filos</title>
 
 </head>
@@ -23,14 +24,14 @@
       <img src="assets/images/sciFilos.png" alt="Sci-Filos" class="logo">
     </header>
 
-    <nav class="search"> <input type="search" class="search" id="search" placeholder="BÚSQUEDA" /> </nav>
+    <nav class="search"><input type="search"  class="search" id="search" placeholder="BÚSQUEDA" /> </nav>
 
 
-    <section id="movies-sci-fi-filter">
-    </section>
+    <span id="movies-sci-fi-filter">
+    </span>
     <!-- Sección que contiene el inicio con la recomendación del día -->
     <section class="recommendation" id="recommendation">
-      <h2>TENDENCIAS</h2>
+      <h2 >TENDENCIAS</h2>
       <div class="container">
             <div id="carouselExampleInterval" class="carousel slide mx-auto" data-ride="carousel" style="width: 250px;">
                 <div class="carousel-inner">
@@ -80,8 +81,8 @@
     <!-- Sección que contiene el top 10 -->
     <section class="top" id="top">
       <h2>TOP 10</h2>
-      <section id="section-top">
-      </section>
+      <span id="section-top">
+      </span>
     </section>
 
 
@@ -91,8 +92,8 @@
     <!-- Sección que contiene los estrenos -->
     <section class="new" id="new">
       <h2>LANZAMIENTOS</h2>
-      <section id="section-premier">
-      </section>
+      <span id="section-premier">
+      </span>
     </section>
 
 
@@ -101,9 +102,9 @@
     <footer>
 
       <div class="fixed-bottom" >
-        <a href="#recommendation"  class="nav__item"  id="home"><i class="fas fa-home"></i></a>
-        <a href="#top" class="nav__item" id="imdbRating"><i class="fas fa-arrow-circle-up"></i></a><!--  <button type="button" class="btn"></button>-->
-        <a href="#new" class="nav__item" id="Year"><i class="fas fa-rocket"></i></a>
+        <a href="#recommendation"  class="nav__item sin-hover"  id="home"><i class="fas fa-home"></i></a>
+        <a href="#top" class="nav__item sin-hover" class="text-secondary" id="imdbRating"><i class="fas fa-star"></i></a><!--  <button type="button" class="btn"></button>-->
+        <a href="#new" class="nav__item sin-hover" id="Year"><i class="fas fa-rocket"></i></a>
       </div>
 
     </footer>
