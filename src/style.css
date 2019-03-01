@@ -21,6 +21,7 @@ html,body{
     padding-bottom: 3px;
     height: 90px;
     padding-top: 9px;
+
 }
 .imagen-top{
     width:100%;
@@ -77,6 +78,7 @@ nav i{
         color: white;
         margin: 1%;
         width: 97%;
+
         text-align: center;
         font-size: 3.5vw;
         display: inline-block;
@@ -109,6 +111,7 @@ nav i{
     margin: 0 auto;
 }
  
+
 #header {
     margin:auto;
     width:500px;
@@ -119,7 +122,7 @@ ul, ol {
 }
 
 .nav {
-    width: 80%;
+    width: 100%;
     margin: 0px;
     margin-left: 0%;
     padding: 0px;
@@ -217,7 +220,6 @@ nav{
     display:block;
     width: 186.5px;
 }
-
 .nav li:hover {
     background-color:#434343;
 }
@@ -226,6 +228,7 @@ nav{
     display:none;
     position:absolute;
     padding: 15px;
+
     margin-left: 71%;
     z-index: 6;
 }
@@ -248,6 +251,7 @@ nav{
     margin-left: 62%;
     position: fixed;
 }
+
 
 @media (min-width: 1025px){
 
@@ -378,3 +382,5 @@ body{
     display: inline-block;
 }
 }
+
+
