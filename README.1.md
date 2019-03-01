@@ -29,7 +29,7 @@ La aplicación está estructurada utilizando:
 ## Definición del producto
 **O´ccult Movie** es una app diseñada para aquellas personas que están adentrándose en el Cine de Arte (también conocido como cine de culto o cine de autor) y, por tal motivo, necesitan y buscan recomendaciones para lograrlo.
 
-## Definición de Usuario##
+## Definición de Usuario
 Personas de 18 a 45 años que comienzan, quieren y buscan la manera de adentrarse al mundo del Cine de Arte culto y para esto desean obtener información sintetizada de las películas para animarse a verlas y ampliar su acervo cinéfilo.
 
 ## Historias de usuario
@@ -61,16 +61,16 @@ Imágenes editadas en Marvel
 **Resultados Primer Test**
 En primera instancia se realizó un test a 25 personas para saber:
 
--Si existía la necesidad de usuarios de encontrar recomendaciones para ver películas.
--A travéz de qué dispositivos suelen realizar estas búsquedas.
--Qué información necesitan para decidir ver una película o no.
--Conocer la afinidad de las personas hacia el Cine de Arte Culto.
+- Si existía la necesidad de usuarios de encontrar recomendaciones para ver películas.
+- A travéz de qué dispositivos suelen realizar estas búsquedas.
+- Qué información necesitan para decidir ver una película o no.
+- Conocer la afinidad de las personas hacia el Cine de Arte Culto.
 
 Se obtuvo:
--El 92% de los encuestados, es decir 23 personas, han tenido la necesidad de buscar recomendaciones de películas.
--17 personas prefieren utilizar un celular para realizar este tipo de búsquedas.
--21 personas gustan del Cine de Arte De Culto.
--La información que necesitan principalmente para decidir ver una película son: Sinopsis(68%),Género(40%),Director(24%), Premiaciones(20%).
+- El 92% de los encuestados, es decir 23 personas, han tenido la necesidad de buscar recomendaciones de películas.
+- 17 personas prefieren utilizar un celular para realizar este tipo de búsquedas.
+- 21 personas gustan del Cine de Arte De Culto.
+- La información que necesitan principalmente para decidir ver una película son: Sinopsis(68%),Género(40%),Director(24%), Premiaciones(20%).
 
 ![Encuesta en línea](src/encuestainicial/p1.png)
 ![Encuesta en línea](src/encuestainicial/p2.png)
@@ -105,38 +105,39 @@ Muestra de Prototipos
 **Problemas de usabilidad y diseño detectados a través de encuestas**
 Encuesta virtual realizada a 25 personas y encuesta presencial realizada a 6 personas de los cuáles los problemas encontrados son los siguientes:
 
--Innecesario botón de información a cerca de la página, no se utiliza ni se consulta, agregar esta información muy breve en página principal.
--Desean ver el año de las películas
--Prefieren un fondo oscuro.
--Más espacio de bordes entre elementos y pantalla, se ve apretado.
--Contacto de redes sociales sin sentido.
--Sección principal con encabezado de TOP 5, arriba de carrusel confunde.
--Sección de "CONTACTO" nada útil hasta el momento.
+- Innecesario botón de información a cerca de la página, no se utiliza ni se consulta, agregar esta información muy breve en página principal.
+- Desean ver el año de las películas
+- Prefieren un fondo oscuro.
+- Más espacio de bordes entre elementos y pantalla, se ve apretado.
+- Contacto de redes sociales sin sentido.
+- Sección principal con encabezado de TOP 5, arriba de carrusel confunde.
+- Sección de "CONTACTO" nada útil hasta el momento.
 
 **Cambios Realizados**
 En base a los problemas de usabilidad y diseño que la encuesta presencial nos arrojó, se realizaron los siguientes cambios:
 
--Se eliminó sección "Acerca de" y en su lugar, brevemente se agregó la especificación de nuestro contenido en la pantalla principal.
--Se le dió mayor espacio, margenes y bordes a las fichas de las películas.
--Mayor grosor a la barra que contiene el título de la página y el buscador.
--El fondo se oscureció.
--Se eliminó frase "TOP 5".
--Se eliminó sección de "CONTACTO".
+- Se eliminó sección "Acerca de" y en su lugar, brevemente se agregó la especificación de nuestro contenido en la pantalla principal.
+- Se le dió mayor espacio, margenes y bordes a las fichas de las películas.
+- Mayor grosor a la barra que contiene el título de la página y el buscador.
+- El fondo se oscureció.
+- Se eliminó frase "TOP 5".
+- Se eliminó sección de "CONTACTO".
 
 ##Prototipos de Alta Fidelidad Finales Mobile y Desktop
 ![Prototipo Final Mobile](src/prototipos/prot_alta_fid_final_mobile.jpg)
 ![Prototipo Final Desktop](src/prototipos/prot_alta_fidelidad_web.png)
 
 ## Implementación de la Interfaz de Usuario (HTML/CSS/JS)
-Se muestra la data en una interfaz: una lista con las imágenes que contienen el poster, el título, el género, año y el director de cada película, de un total de 34 películas. Al dar click a cada imagen, se desplegará una tarjeta que mostrará más datos de la película seleccionada.
-La aplicación permite al usuario realizar búsqueda por letra, es decir, se puede colocar la inicial y se muestran las películas o directores que coincidan con dicha inicial.
-La aplicación permite al usuario filtrar la data:ya sea por título, género y/o director. 
-La información se visualiza sin problemas desde distintos tamaños de pantallas: móviles, tablets y desktops.
+- Se muestra la data en una interfaz: una lista con las imágenes que contienen el poster, el título, el género, año y el director de cada película, de un total de 34 películas. 
+- Al dar click a cada imagen, se desplegará una tarjeta que mostrará más datos de la película seleccionada.
+- La aplicación permite al usuario realizar búsqueda por letra, es decir, se puede colocar la inicial y se muestran las películas o directores que coincidan con dicha inicial.
+- La aplicación permite al usuario filtrar la data:ya sea por título, género y/o director. 
+- La información se visualiza sin problemas desde distintos tamaños de pantallas: móviles, tablets y desktops.
 
 ##Alcances a Futuro
--Debido a que el contenido se encuentra en inglés, uno de los alcances consiste en traducir todo el contenido y se encuentre accesible al idioma español.
--Aumentar la cantidad de películas.
--Otro de ellos consiste en la funcionalida de compartir las recomendaciones que el usuario desee por medio de sus redes sociales, implementando el loggin de Facebook y Twitter principalmente.
+- Debido a que el contenido se encuentra en inglés, uno de los alcances consiste en traducir todo el contenido y se encuentre accesible al idioma español.
+- Aumentar la cantidad de películas.
+- Otro de ellos consiste en la funcionalida de compartir las recomendaciones que el usuario desee por medio de sus redes sociales, implementando el loggin de Facebook y Twitter principalmente.
 
 ## Autores
 * Ameyalli Brito
@@ -158,7 +159,6 @@ La información se visualiza sin problemas desde distintos tamaños de pantallas
 
 ##Fuentes consultadas
 * http://capitaljovenisic.org.mx/blog/post/
-* las-10-mejores-pel%C3%ADculas-de-cine-de-arte-que-no-te-puedes-perder-/252
 * https://culturacolectiva.com/cine/por-que-es-cine-de-arte
 * http://cinemania.elmundo.es/especiales/las-100-mejores-webs-de-cine/
 * https://encuadres.com.mx/ 
