@@ -91,7 +91,6 @@ Evidencia de la encuesta inicial, realizada a 25 personas, donde sus respuestas 
 ![GitHub Encuesta](src/prototipos/p7.jpg)
 
 ##Pruebas de usabilidad
-<<<<<<< HEAD
 **Resultados Primer Test**
 En primera instancia se realizó un test a 25 personas para saber:
 
@@ -171,23 +170,6 @@ La información se visualiza sin problemas desde distintos tamaños de pantallas
 -Debido a que el contenido se encuentra en inglés, uno de los alcances consiste en traducir todo el contenido y se encuentre accesible al idioma español.
 -Aumentar la cantidad de películas.
 -Otro de ellos consiste en la funcionalida de compartir las recomendaciones que el usuario desee por medio de sus redes sociales, implementando el loggin de Facebook y Twitter principalmente.
-=======
-**Problemas de usabilidad detectados a través de los tests**
-Después de una encuesta sobre el diseño de lo que sería la app, se encontró que no se entendía cómo funcionaba la búsqueda o el menú de búsqueda. Asimismo, se sugirió que se realizara cambio de colores y que se cambiara la forma en que funcionaría el "carrusel". Por otro lado, se pidió que se agregara un breve texto informativo indicando qué se encontraría en esa app.
-
-![GitHub Encuesta de diseño](src/encuestadiseño/pm1.png)
-![GitHub Encuesta de diseño](src/encuestadiseño/pm2.jpg)
-![GitHub Encuesta de diseño](src/encuestadiseño/pm3.jpg)
-![GitHub Encuesta de diseño](src/encuestadiseño/pm4.jpg)
-![GitHub Encuesta de diseño](src/encuestadiseño/muestra.jpg)
-
-## Implementación de la Interfaz de Usuario (HTML/CSS/JS)
-Se muestra la data en una interfaz: un "carrusel" con las imágenes que contienen el poster, el título y el director de cada película. Al dar click a cada imagen, se desplegará una ficha que mostrará más datos de la película seleccionado.
-La aplicación permite al usuario realizar búsqueda por letra, es decir, se puede colocar la inicial y se muestran las películas o directores que coincidan con dicha inicial.
-La aplicación permite al usuario filtrar la data: ya sea por título, género y/o director. 
-
-La información se visualiza sin problemas desde distintos tamaños de pantallas: móviles, tablets y desktops.
->>>>>>> upstream/master
 
 ## Autores
 * Ameyalli Brito
