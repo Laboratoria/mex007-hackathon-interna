@@ -1,18 +1,20 @@
 const r = JSON.parse(localStorage.getItem('r'))
-const genre = localStorage.getItem('genre')
+const genre2 = localStorage.getItem('genre2')
 const allMovies = JSON.parse(localStorage.getItem('allMovies'))
 const getTitle = localStorage.getItem('getTitle')
 
+
 let resultsMovies = document.getElementById('results');
 const resultadoImg = () => {
-    resultsMovies.innerHTML="";
+    resultsMovies.innerHTML=''
+    resultsMovies.innerHTML=`<header class="header">
+    <nav class=${getTitle}> 
+    <h1 class="${getTitle}">Movie ${getTitle} </h1>
+    </nav>
+ </header>`
     r.forEach(element => { 
-      const arrayProperties= `<header class="header">
-      <h1 class="title">Movie ${getTitle}</h1>
-      <nav> 
-      </nav>
-   </header>
-   <main class="main"><div><img src="${element.Poster}"><br> <p> Titulo: ${element.Title}<br> Tiempo: ${element.Runtime}</p></div>`
+      const arrayProperties= 
+     `<main class="main"><div><img src="${element.Poster}"><br> <p> Titulo: ${element.Title}<br> Tiempo: ${element.Runtime}</p></div>`
       resultsMovies.insertAdjacentHTML('beforeend', arrayProperties); 
       console.log(resultsMovies) 
    });

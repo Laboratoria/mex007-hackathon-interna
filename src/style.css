@@ -103,10 +103,12 @@ text-align: center;
 .romance{
     background-color: #c42860;
     background-image: url('./images/home/like.svg');
+    background-repeat: no-repeat;
 }
 .comedy{
     background-color: #ffaf13;
     background-image: url('./images/home/happy.svg');
+    background-repeat: no-repeat;
 
 }
 .futurista{
@@ -150,4 +152,36 @@ text-align: center;
     width: 100%;
     border-radius: 10px;
     font-size:1.2rem;
-}  
+} 
+nav h1{
+    margin:0;
+    line-height: 80px;
+} 
+.romantico,
+.Alegre,
+.Futurista,
+.Valiente,
+.Aventurero,
+.Nostalgico{
+    height: 80px;
+}
+.romantico{
+    background: #c42860;
+}
+.Alegre{
+    background: #ffaf13;
+}
+.Futurista{
+    background:#484B8d;
+
+}
+.Valiente{
+    background:#ce1032;
+}
+.Aventurero{
+    background:#ff6e1d;
+
+}
+.Nostalgico{
+    background:#567b96;
+}
