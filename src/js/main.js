@@ -1,4 +1,9 @@
 const printData = document.getElementById('prueba');
+const dataMovies = document.getElementById('data-movies');
+const home = document.getElementById('home');
+const search = document.getElementById('search');
+const searchData = document.getElementById('search-data');
+const index = document.getElementById('index')
 let kinema = [];
 
 
@@ -27,7 +32,52 @@ const printFilms = () => {
      <p>Plot: ${element.Plot}</p>
      <p>Actors: ${element.Actors}</p>
      <p>Country: ${element.Country}</p></button>`;
-    printData.insertAdjacentHTML("beforeend", infoCine);
+    dataMovies.insertAdjacentHTML("beforeend", infoCine);
     return printFilms;
     });
    };
+
+   const carousel = () => {
+       printData.innerHTML = `<div id="carouselExampleIndicators" class="carousel slide caro" data-ride="carousel">
+       <ol class="carousel-indicators">
+         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+       </ol>
+       <div class="carousel-inner">
+         <div class="carousel-item active">
+           <img src="./images/IMG_20190227_200628.jpg" class="d-block w-100" alt="#">
+         </div>
+         <div class="carousel-item">
+           <img src="./images/IMG_20190227_200628.jpg" class="d-block w-100" alt="#">
+         </div>
+         <div class="carousel-item">
+           <img src="./images/IMG_20190227_200628.jpg" class="d-block w-100" alt="#">
+         </div>
+       </div>
+       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+       </a>
+       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+       </a>
+     </div>` 
+   }
+
+   carousel()
+
+   home.addEventListener('click', () => {
+    index.classList.remove('hide');
+    printData.classList.remove('hide');
+    searchData.classList.add('hide');
+   })
+
+   search.addEventListener('click', () => {
+    index.classList.add('hide');
+    printData.classList.add('hide');
+    searchData.classList.remove('hide');
+   })
+
+   
