@@ -1,0 +1,221 @@
+html,body{
+    margin:0px;
+}
+.logo{
+    margin-left: 5%;
+}
+.imagen-top{
+    width:100%;
+    height: 33em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.image-pulp-fiction{
+    background-image: url(https://ae01.alicdn.com/kf/HTB1fJlmPFXXXXXgapXXq6xXFXXXa/Custom-Canvas-Wall-Decals-Pulp-Fiction-Poster-Pulp-Fiction-Wallpaper-Uma-Thurman-Wall-Stickers-Mural-Christmas.jpg_640x640.jpg);
+
+}
+.image-the-shining{
+    background-image: url(https://http2.mlstatic.com/poster-the-shining-el-resplandor-tamano-35x50-cm-D_NQ_NP_574115-MLA25131008966_102016-F.jpg);
+
+
+}
+.image-mad-max{
+    background-image: url(https://imagessl2.casadellibro.com/m/ig/2/1271422.jpg);
+
+}
+.image-trainspotting{
+    background-image: url(https://pics.filmaffinity.com/trainspotting-196178076-large.jpg);
+
+}
+.image-the-fight-club{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMjJmYTNkNmItYjYyZC00MGUxLWJhNWMtZDY4Nzc1MDAwMzU5XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg);
+
+}
+
+nav i{
+    color: gray;
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 6%;
+    z-index: 10;
+    }
+.plot{
+    float: right;
+    position: absolute;
+    width: 38%;
+    margin-left: 52%;
+    text-align: justify;
+    font-size: 3vw;
+    z-index: 5;
+    margin-top: 58px;
+
+}
+    .movie-card{
+        background-color: white;
+        border-style: outset;
+        border-radius: 10px;
+        color: white;
+        margin: 1%;
+        width: 95%;
+        text-align: center;
+        font-size: 3.5vw;
+        display: inline-block;
+        height: 25em;
+        background-color: #2a3440
+       }
+.title{
+    font-size: 6vw;
+}
+.poster{
+    width: 50%;
+    float: left;
+    height: 18em;
+    margin-left: 2%;
+    margin-top: -16px;
+}
+#header {
+    margin:auto;
+    width:500px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ul, ol {
+    list-style:none;
+}
+
+.nav {
+    width: 100%;
+    margin: 0px;
+    margin-left: 0%;
+    padding: 0px;
+    display: block;
+    padding-top: 10px
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 25%;
+    height: 3em;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.nav li:hover {
+    background-color:#434343;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+
+    padding: 0px;
+    margin-left: 18%;
+    z-index: 6;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+    right: 37%;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+nav{
+    width: 100%;
+    margin: 0px;
+    margin-left: 0%;
+    padding: 0px;
+    display: block;
+    position: relative;
+    z-index: 4;
+    height: 7em;
+    background-color: #2a3440;
+
+ }
+
+ #browser{
+    border-radius: 7px;
+    width: 77%;
+    height: 35px;
+    padding-left: 8%;
+    margin-left: 3%;
+    margin-top: 12px;
+    position: absolute;
+    z-index: 5
+
+ }
+ .carousel{
+     position: absolute;
+     z-index: 3;
+ }
+ ul, ol {
+    list-style:none;
+}
+
+.nav {
+    width:500px;
+    margin:0 auto; 
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li {
+    background-color:#000;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+.nav li:hover {
+    background-color:#434343;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    padding: 0px;
+    margin-left: 71%;
+    z-index: 6;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+.style-nav{
+    width: 122%;
+    margin-left: 62%;
+    position: fixed;
+}
+.dir{
+    float: right;
+    font-size: 3vw;
+    margin-right: 8%;
+}
+ 
