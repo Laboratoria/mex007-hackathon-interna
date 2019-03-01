@@ -4,8 +4,9 @@ filterInput: (dataMovies, letter) => {
     const search = dataMovies.filter(dataMovies =>(dataMovies.Title.toLowerCase().match(letter.toLowerCase()) || dataMovies.Director.toLowerCase().match(letter.toLowerCase())));
     
     if(search == ""){
-    alert("Sorry, busqueda sin éxtio por las siguientes razones: \n -No se clasifica como cine de culto \n -No se encuentra aun con nuestra base de datos. Seguiremos trabajando")
+    alert("Sorry, unsuccessful search for the following reasons\n-It is not classified as Art Cinema\n -Not yet in our database, we will continue working.")
     }
+    
     else{
     return search;
     }
