@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image" href="./images/favicon.png">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Kinema</title>
+</head>
+<body>
+    <header id="index" class="fixed"> 
+        <h1>Últimos estrenos</h1> 
+    </header>
+    <main>
+       <article id="prueba" class="fixed padding-50"></article>
+       <section id="search-data" class="hide">
+           <article class="padding-10 fixed"> 
+                <h2>Search</h2>
+                <input type="search" name="" id="input-search" class="position-absolute">
+                <input type="radio" name="" id="Director" class="position-absolute input-radio"><label id="radio-direc" for="" class="position-absolute radio-name">Director</label>
+                <input type="radio" name="" id="Title" class="position-absolute input-radio"><label id="radio-title" for="" class="position-absolute radio-name">Title</label>
+                <input type="radio" name="" id="Actor" class="position-absolute input-radio"><label id="radio-actor" for="" class="position-absolute radio-name">Actor</label>
+            </article>
+            
+        </section>
+        <section id="category" class="position-absolute">
+            <h2>Type:</h2>
+            <button>Movies</button>
+            <button>Series</button>
+        </section>
+
+        
+        <article id="data-movies" class="padding-80"></article>
+   </main>
+   <footer class="fixed">
+    <button id="home" class="btn-footer btn-home position-absolute"><p class="btn-footer btn-name position-absolute icon">Home</p></button>
+    <button id="search" class="btn-footer btn-search position-absolute"><p class="btn-footer btn-name position-absolute icon">Search</p></button>
+    <button id="peli" class="btn-footer position-absolute btn-peli"><p class="btn-footer btn-name position-absolute icon">Peliteca</p></button>
+   </footer>
+    
+    <script src="./js/main.js"></script>
+    <script src="./data.js"></script>
+</body>
+</html>
