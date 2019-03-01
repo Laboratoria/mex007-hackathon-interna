@@ -39,11 +39,12 @@ for(let i= 0; i< titles.length; i++) {
    for (let boton in buttonTypes){
      buttonTypes[boton].addEventListener('click', (event) =>{
      const genre = event.target.id
+     let genre2 = event.target.dataset.color;
      let getTitle = event.target.dataset.mood;
      console.log(genre)
       let r = window.movies.filterGenre(allMovies , genre);
    localStorage.setItem('r', JSON.stringify(r))
-   localStorage.setItem('genre', JSON.stringify(genre))
+   localStorage.setItem('genre2', JSON.stringify(genre2))
    localStorage.setItem('allMovies', JSON.stringify(allMovies))
    localStorage.setItem('getTitle', JSON.stringify(getTitle))
 })};
