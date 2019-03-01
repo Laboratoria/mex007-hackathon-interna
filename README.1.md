@@ -43,7 +43,7 @@ Personas de 18 a 45 años que comienzan, quieren y buscan la manera de adentrars
  
 ## Diseño de experiencia de usuario (User Experience Design):
 **Ideación**
-El objetivo es lograr que la interacción sea intuitiva, fácil de usar y que logre alcanzar a introducir efectivamente a nuestro usuario al mundo del Cine de Arte Culto.
+El objetivo es lograr que la interacción sea intuitiva, fácil de usar y que logre alcanzar a introducir efectivamente a nuestro usuario al mundo del Cine de Arte.
 
 ##Fotos de los bocetos hechos en hoja con bolígrafo
 ![GitHub Boceto](src/prototipos/boceto1.jpg)
@@ -54,19 +54,8 @@ El objetivo es lograr que la interacción sea intuitiva, fácil de usar y que lo
 Imágenes editadas en Marvel
 ![GitHub BocetoAltaFidelidad](src/prototipos/altafidelidad1.png)
 ![GitHub BocetoAltaFidelidad](src/prototipos/altafidelidad2.jpg)
-![GitHub BocetoAltaFidelidad](src/prototipos/altafidelidad3.jpg)
+![GitHub BocetoAltaFidelidad](src/prototipos/altafidelida3.jpg)
 ![GitHub BocetoAltaFidelidad](src/prototipos/altafidelidad4.jpg)
-
-##Encuesta
-Evidencia de la encuesta inicial, realizada a 25 personas, donde sus respuestas confirmaron que sí son usuarias de páginas para consultar información sobre películas, asimismo brindaron una orientación para realizar el diseño en mobile first.
-
-![GitHub Encuesta](src/prototipos/p1.png)
-![GitHub Encuesta](src/prototipos/p2.jpg)
-![GitHub Encuesta](src/prototipos/p3.jpg)
-![GitHub Encuesta](src/prototipos/p4.jpg)
-![GitHub Encuesta](src/prototipos/p5.jpg)
-![GitHub Encuesta](src/prototipos/p6.jpg)
-![GitHub Encuesta](src/prototipos/p7.jpg)
 
 ##Pruebas de usabilidad
 **Resultados Primer Test**
