@@ -6,9 +6,16 @@ const sectionTop = document.getElementById('section-top');
 const movieFilterByLetter = document.getElementById('movies-sci-fi-filter');
 const searchLett = document.getElementById("search");
 const topTenOrder = document.getElementById("imdbRating");
+const dataFilter = document.getElementById("data-filter");
 const movieRelease = document.getElementById("Year");
+const homeDisplay = document.getElementById("home");
 const dataMovieList = [];
-const imbId = ['tt0816692', 'tt0083658', 'tt1454468', 'tt0499549',
+const imbId = ['tt3659388','tt0118884','tt0756683','tt0816692','tt0079945',
+  'tt2649554','tt0379786','tt0087004','tt3967856',
+  'tt0087182','tt0387808','tt0123755','tt0119654',
+  'tt2075340','tt4680182','tt2798920','tt2543164',
+  'tt0119177','tt0089114','tt0118929','tt0365808','tt0096251',
+  'tt0084827','tt0083658', 'tt1454468', 'tt0499549',
   'tt0106062', 'tt0079501', 'tt0796366', 'tt0888496',
   'tt0084827', 'tt0088763', 'tt0078748', 'tt3188542', 'tt2087752',
 ];
@@ -20,6 +27,7 @@ const dataMovie = () => {
       .then(response => response.json())
       .then(data => {
         dataMovieList.push(data);
+        filterCoincidence(dataMovieList);
       })
   }
 };
@@ -31,8 +39,8 @@ const printMoviesTop = (dataMovieList) => {
 
   dataMovieList.map((dataMovieList) => {
     let nameMovies =
-      `<div class="data"><h5>${dataMovieList.Title}</h5><p>${dataMovieList.Year}</p>
-    <p>${dataMovieList.imdbRating}</p><img id="${dataMovieList.Title}" src="${dataMovieList.Poster}">
+      `<div class="data"><img id="${dataMovieList.Title}" src="${dataMovieList.Poster}"><h5>${dataMovieList.Title}</h5><p>${dataMovieList.Year}</p>
+    <p>${dataMovieList.imdbRating}</p>
     </div>`;
     sectionTop.insertAdjacentHTML("beforeend", nameMovies);
 
@@ -44,10 +52,25 @@ const printMoviesPrem = (dataMovieList) => {
 
   dataMovieList.map((dataMovieList) => {
     let nameMovies =
-      `<div class="data"><h5>${dataMovieList.Title}</h5><p>${dataMovieList.Year}</p>
-    <p>${dataMovieList.imdbRating}</p><img id="${dataMovieList.Title}" src="${dataMovieList.Poster}">
+      `<div class="data"><img id="${dataMovieList.Title}" src="${dataMovieList.Poster}">
+      <h5>${dataMovieList.Title}</h5><p>${dataMovieList.Year}<br>${dataMovieList.imdbRating}</p>
+    
     </div>`;
     sectionPremier.insertAdjacentHTML("beforeend", nameMovies);
+
+  })
+};
+
+const printMoviesFilter = (dataMovieList) => {
+  dataFilter.innerHTML = " ";
+
+  dataMovieList.map((dataMovieList) => {
+    let nameMovies =
+      `<div class="data"><img id="${dataMovieList.Title}" src="${dataMovieList.Poster}">
+      <h5>${dataMovieList.Title}</h5><p>${dataMovieList.Year}<br>${dataMovieList.imdbRating}</p>
+    
+    </div>`;
+    dataFilter.insertAdjacentHTML("beforeend", nameMovies);
 
   })
 };
@@ -56,7 +79,7 @@ const printMoviesPrem = (dataMovieList) => {
 const filterCoincidence = () => {
   searchLett.addEventListener("keyup", () => {
     let searchValue = document.getElementById("search").value;
-    printMovies(window.data.filterByConside(dataMovieList, searchValue));
+    printMoviesFilter(window.data.filterByConside(dataMovieList, searchValue));
   });
 }
 
@@ -78,6 +101,13 @@ movieRelease.addEventListener("click", () => {
   RecomDisplay.style.display = "none";
   arrayMovie = window.data.filterbyYear(dataMovieList);
   printMoviesPrem(arrayMovie);
+})
+
+homeDisplay.addEventListener("click", () => {
+  topDisplay.style.display = "none";
+  PremiDisplay.style.display = "none";
+  RecomDisplay.style.display = "block";
+  
 })
 
 //Invocando funciónes
