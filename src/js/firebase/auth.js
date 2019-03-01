@@ -25,6 +25,7 @@ if (window.location.pathname === '/src/views/login' || window.location.pathname 
 
   const googlebtn = document.getElementById('googleBtn')
   const googleAuth = () => {
+    console.log('click')
     firebase.auth().signInWithPopup(provider).then(function (result) {
       // This gives you a Google Access Token. You can use it to access the Google API.
       var token = result.credential.accessToken;
@@ -72,7 +73,29 @@ if (window.location.pathname === '/src/views/login' || window.location.pathname 
   }
 
   loginBtn.addEventListener('click', logIn)
-}
+
+
+document.getElementById('face-btn').addEventListener('click', () => {
+  var provider = new firebase.auth.FacebookAuthProvider();
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+    var token = result.credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+    // ...
+  }).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });
+})
+
+} // cierra funcionalidad de login 
 
 const logOutBtn = document.getElementById('log-out')
 let provider = new firebase.auth.GoogleAuthProvider();
