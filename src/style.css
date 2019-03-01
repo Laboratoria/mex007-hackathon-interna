@@ -133,16 +133,21 @@ text-align: center;
  margin-bottom: 220px;
 }
 .results div{
+    margin-top: 20px;
     border-radius: 10px;
-    width: 30%;
+    width: 100%;
     margin-left: 2%;
+    margin-bottom: 20px;
     vertical-align: top;
     display: inline-block;
     background-color: rgba(156, 156, 156, 0.37);
-    border: 1px solid rgba(156, 156, 156, 0.37);
 } 
 .results div img{
     width: 100%;
-    
-    
+    border-radius: 10px;
+} 
+.results div p{
+    width: 100%;
+    border-radius: 10px;
+    font-size:1.2rem;
 }  
