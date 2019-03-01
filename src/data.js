@@ -10,20 +10,5 @@ window.movie = {
     return filtering;
   },
 
-  
-
-  toModal: (allMovies, movieSelect) => {
-    let champ = {};
-    for (const key in allMovies) {
-      if (allMovies.hasOwnProperty(key)) {
-        const element = allMovies[key];
-        if (element.imdbID === movieSelect) {
-          movie = element;
-          return element;
-        }
-      }
-    }
-    return movie;
-  },
   //Esta llave cierra window
 }

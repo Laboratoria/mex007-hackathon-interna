@@ -57,18 +57,6 @@ const printData = (allMovies) => {
       </div>`;
         cardMovie.insertAdjacentHTML("beforeend", result);
     });
-
-//se abra el modal, obtiene del id de la película
-
-for (let i = 0; i < movies.length; i++) {
-    movies[i].addEventListener("click", () => {
-      let movieSelected = movies[i].id;
-      const movie2 = window.movie.toModal(allMovies, movieSelected);
-      printModal(movie2);
-      modalChamp.classList.remove('hide');
-    })
-  }; 
-
 }
 moviesData();
 
