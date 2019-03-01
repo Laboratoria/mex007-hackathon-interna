@@ -1,4 +1,5 @@
-const movieSciFi = document.getElementById('movies-sci-fi');
+const sectionPremier = document.getElementById('section-premier');
+const sectionTop = document.getElementById('section-top');
 const movieFilterByLetter = document.getElementById('movies-sci-fi-filter');
 const searchLett = document.getElementById("search");
 const topTenOrder = document.getElementById("imdbRating");
@@ -22,15 +23,28 @@ const dataMovie = () => {
 
 
 //Función que sirve para imprimir data
-const printMovies = (dataMovieList) => {
-  movieSciFi.innerHTML = " ";
+const printMoviesTop = (dataMovieList) => {
+  sectionTop.innerHTML = " ";
 
   dataMovieList.map((dataMovieList) => {
     let nameMovies =
       `<div class="data"><h5>${dataMovieList.Title}</h5><p>${dataMovieList.Year}</p>
     <p>${dataMovieList.imdbRating}</p><img id="${dataMovieList.Title}" src="${dataMovieList.Poster}">
     </div>`;
-    movieSciFi.insertAdjacentHTML("beforeend", nameMovies);
+    sectionTop.insertAdjacentHTML("beforeend", nameMovies);
+
+  })
+};
+
+const printMoviesPrem = (dataMovieList) => {
+  sectionPremier.innerHTML = " ";
+
+  dataMovieList.map((dataMovieList) => {
+    let nameMovies =
+      `<div class="data"><h5>${dataMovieList.Title}</h5><p>${dataMovieList.Year}</p>
+    <p>${dataMovieList.imdbRating}</p><img id="${dataMovieList.Title}" src="${dataMovieList.Poster}">
+    </div>`;
+    sectionPremier.insertAdjacentHTML("beforeend", nameMovies);
 
   })
 };
@@ -48,14 +62,14 @@ const filterCoincidence = () => {
 topTenOrder.addEventListener("click", () => {
   arrayNewOrder = window.data.orderData(dataMovieList);
   arrayTenMovies = arrayNewOrder.slice(0, 10);
-  printMovies(arrayTenMovies);
+  printMoviesTop(arrayTenMovies);
 
 })
 
 //Funcion para filtrar por año
 movieRelease.addEventListener("click", () => {
     arrayMovie = window.data.filterbyYear(dataMovieList);
-    printMovies(arrayMovie);
+    printMoviesPrem(arrayMovie);
 })
 
 //Invocando funciónes
