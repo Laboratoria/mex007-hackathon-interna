@@ -1,3 +1,14 @@
+/*const hola = document.getElementById('hola')
+
+hola.addEventListener("click", () => {
+  redireccionar();
+})
+
+const redireccionar = () => {
+  setTimeout("location.href='./home.html'");
+}
+*/
+
 var app_fireBase = {}
 var firebase;
     // Initialize Firebase
@@ -12,8 +23,3 @@ var firebase;
       };
       firebase.initializeApp(config);
       app_fireBase = firebase;
-  
-
-
-      
- 

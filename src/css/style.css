@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    border: 0;
+    padding: 0;
+}
+
+body{
+    background: blueviolet;
+}
+
+header{
+    width: 100%;
+    background: rgb(54, 54, 54);
+    height: 50px;
+}
+
+footer{
+    background-color: rgb(54, 54, 54);
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+    }
+
+h1, h2{
+    padding-top: 12px; 
+    margin: auto;
+    font-family: 'Roboto', sans-serif;  
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #F7F2F2;
+}
+
+.hide{
+    display: none;
+}
+
+.fixed{
+    position: fixed;
+}
+.padding-80{
+    padding-top: 150px; 
+}
+
+.padding-50{
+    padding-top: 40px; 
+}
+
+.padding-10{
+    background-color: black;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 100px;
+}
+#prueba {
+    width: 100%;
+}
+.position-absolute {
+    position: absolute;
+}
+
+#input-search {
+    margin-top: 15px; 
+    width: 250px;
+    float: left;
+    left: 12%;
+    border-radius: 8px;
+}
+
+.input-radio {
+    margin-top: 55px;
+}
+#Director {
+    left: 40px; 
+}
+
+#Title {
+    left: 143px; 
+}
+
+#Actor{
+    right: 80px;
+}
+
+.radio-name{
+    color: white;
+    margin-top: 49px;
+}
+
+#radio-direc{
+    left: 55px;
+}
+
+#radio-title {
+    left: 158px;
+}
+
+#radio-actor {
+    right: 40px;
+}
+
+#category{
+    top: 150px;
+}
+
+.btn-footer {
+    background-color: rgb(255, 2, 2);
+    top: 5px;
+    height: 300px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.btn-home {
+    left: 35px;
+    background-image: url('./images/home-icon.png');
+    background-size: 50%;
+}
+
+.poster {
+    height: 580px;
+}
+.btn-search {
+    left: 140px;
+    background-image: url('./images/magnifying_glass.png');
+}
+
+.btn-peli {
+    right: 35px;
+    background-image: url('./images/popcorn-icon.png');
+}
+
+.icon{
+    text-align: center;
+    font-size: 10px;
+}
+
+.btn-name{
+    color: white;
+    top: 27px;
+}
+
+
+
+@media (min-width: 576px) { 
+    body{
+        background: blue;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body{
+        background: pink;
+    }
+}
+ 
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    body{
+        background-color: red;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body{
+        background: orange;
+    }
+}

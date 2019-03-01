@@ -13,7 +13,7 @@ window.data = {
 
   },
 
-
+ 
   filterLetter: (data, letter) => {
     const arrayLetter = data.filter(data => data.Title.toLowerCase().match(letter.toLowerCase()))
     return arrayLetter;

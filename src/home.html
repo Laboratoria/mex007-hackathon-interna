@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="icon" type="image" href="./images/favicon.png">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+    <title>Kinema</title>
+</head>
+
+<body>
+    <header id="index" class="fixed">
+        <h1>Últimos estrenos</h1>
+    </header>
+    <main>
+        <article id="prueba" class="fixed padding-50"></article>
+        <section id="search-data" class="hide">
+            <article class="padding-10 fixed">
+                <h2>Search</h2>
+                <input type="search" name="" id="input-search" class="position-absolute">
+                <input type="radio" name="" value = "0" id="Director" class="radio-type position-absolute input-radio"><label id="radio-direc"
+                    for="" class="position-absolute radio-name">Director</label>
+                <input type="radio" name="" value="1" id="Title" class="radio-type position-absolute input-radio"><label id="radio-title"
+                    for="" class="position-absolute radio-name">Title</label>
+                <input type="radio" name="" value = "2"id="Actor" class="radio-type position-absolute input-radio"><label id="radio-actor"
+                    for="" class="position-absolute radio-name">Actor</label>
+            </article>
+
+        </section>
+        <section id="category" class="position-absolute hide">
+            <h2>Type:</h2>
+            <button id="movie" class="type"> MOVIE</button>
+            <button id="series" class="type">SERIES</button>
+            <input type="search" id="director" placeholder=" Busca por Director">
+            <h2>Género</h2>
+            <button id="Animation" class="boton-type-chart">Animation</button>
+            <button id="Action" class="boton-type-chart">Action</button>
+            <button id="Adventure" class="boton-type-chart"> Adventure</button>
+            <button id="Comedy" class="boton-type-chart">Comedy</button>
+            <button id="Family" class="boton-type-chart">Family</button>
+            <button id="Fantasy" class="boton-type-chart">Fantasy</button>
+            <button id="Musical" class="boton-type-chart">Musical</button>
+            <button id="Romance" class="boton-type-chart">Romance</button>
+            <button id="Sci-Fi" class="boton-type-chart">SciFi</button>
+            <button id="Thriller" class="boton-type-chart">Thriller</button>
+            <button id="Drama" class="boton-type-chart">Drama</button>
+            <button id="Horror" class="boton-type-chart">Horror</button>
+            <button id="Mystery" class="boton-type-chart">Mystery</button>
+            <button id="Comedy" class="boton-type-chart">Comedy</button>
+            <button id="Biography" class="boton-type-chart">Biography</button>
+            <button id="Romance" class="boton-type-chart">Romance</button>
+            <button id="Documentary" class="boton-type-chart">Documentary</button>
+            <button id="Short" class="boton-type-chart">Short</button>
+            <button id="Drama" class="boton-type-chart">Drama</button>
+            <button id="Crime" class="boton-type-chart">Crime</button>
+
+        </section>
+
+
+        <article id="data-movies" class="padding-80"></article>
+    </main>
+    <footer class="fixed">
+        <button id="home" class="btn-footer btn-home position-absolute">
+            <p class="btn-footer btn-name position-absolute icon">Home</p>
+        </button>
+        <button id="search" class="btn-footer btn-search position-absolute">
+            <p class="btn-footer btn-name position-absolute icon">Search</p>
+        </button>
+        <button id="peli" class="btn-footer position-absolute btn-peli">
+            <p class="btn-footer btn-name position-absolute icon">Peliteca</p>
+        </button>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/data.js"></script>
+</body>
+
+</html>
