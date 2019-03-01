@@ -26,7 +26,6 @@ fetch('https://www.omdbapi.com/?apikey=68f0eccc&t='+searcherValue)
 })
 return searchResult;
 };
-
 //console.log(searchResult)
 for(let i= 0; i< titles.length; i++) {
    fetch('https://www.omdbapi.com/?apikey=68f0eccc&t='+ titles[i])
@@ -38,6 +37,7 @@ for(let i= 0; i< titles.length; i++) {
    }
    for (let boton in buttonTypes){
      buttonTypes[boton].addEventListener('click', (event) =>{
+      
      const genre = event.target.id
      let genre2 = event.target.dataset.color;
      let getTitle = event.target.dataset.mood;
