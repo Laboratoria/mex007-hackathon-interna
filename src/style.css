@@ -28,6 +28,9 @@ nav{
 
   section{
     margin-block-start: 50%;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
   }
 
 .logo{
@@ -44,4 +47,8 @@ nav{
 .container {
   box-sizing: border-box;
   width: 50%;
+}
+
+.btn{
+
 }
