@@ -5,4 +5,15 @@
     src: url(../src/assets/fonts/Potra.ttf);
   }
 
-  
+header{
+  text-align: center;
+background: #50576a;
+width: 100%;
+height: auto;
+padding: 3%;
+}
+
+.logo{
+  width: 70%;
+  height:auto;
+}
