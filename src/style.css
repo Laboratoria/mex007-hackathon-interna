@@ -183,3 +183,27 @@ nav h1{
 .Nostalgico{
     background:#567b96;
 }
+.hide{
+    display: none;
+}
+
+/* hover en peliculas*/
+#plot {
+    position: absolute;
+    color: white;
+    z-index: -12;
+    width: 71%;
+    font-size: 128%;
+    text-align: center;
+    margin-top: 19%;
+    margin-left: 13%;
+ }
+ #im:hover {
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+ }
+

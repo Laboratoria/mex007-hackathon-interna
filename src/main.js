@@ -9,8 +9,10 @@ let allMovies = [];
 let resultsMovies = document.getElementById('results');
 const btn = document.getElementById('btn');
 const searcher = document.getElementById('searcher');
+const btnHide = document.getElementById('btn-hide');
 
 btn.addEventListener ('click' , () => {
+  btnHide.classList.add('hide');
  let searcherValue = searcher.value;
  console.log(searcherValue);
  const consumingApi = fetchingApi(searcherValue);
@@ -53,7 +55,9 @@ for(let i= 0; i< titles.length; i++) {
 const printSearchResult = (searchResult) => {
  searchResult.forEach(element => {
    resultsMovies.innerHTML="";
-   const arrayProperties= `<img src="${element.Poster}"> <p> ${element.Title}${element.Runtime}</p>`
+   const arrayProperties= 
+   `<div id= "plot" ><p>Plot: ${element.Plot}</p></div><div id= "im"><img src="${element.Poster}"> <p> Título: ${element.Title} Duración: ${element.Runtime}</p></div>`
+  //  `<img src="${element.Poster}"> <p> ${element.Title}${element.Runtime}</p>`
    resultsMovies.insertAdjacentHTML('beforeend', arrayProperties);
 });
 }
