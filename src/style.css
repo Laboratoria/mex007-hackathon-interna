@@ -6,8 +6,23 @@ body {
     background-color: #50c3c6;
 }
 
+header{
+    width: 100%;
+    display: block; 
+}
+
 #search {
+    width: 40%; 
     float: right;
+    margin-top: 10px; 
+    margin-right: 10px;
+}
+
+#logo2 {
+    width: 40%; 
+    margin-top: 0px; 
+    margin-left: 10px;
+    float: left;
 }
 
 #card-movie {
@@ -55,6 +70,11 @@ body {
 .buttons-menu{
     width: 21%;
     display: inline-block;
+    margin: 0px 1% 1%;
+}
+
+.first-button{
+    width: 21%;
     margin: 0px 1% 1%;
 }
 
