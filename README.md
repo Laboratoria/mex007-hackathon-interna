@@ -1,14 +1,20 @@
 # "Hackathon" de final de _Common Core_, películas
 
+# Indeci-issues
+
 ## Índice
 
 - [Preámbulo](#preámbulo)
-- [Resumen del proyecto](#resumen-del-proyecto)
-- [Historias de usuario](#consideraciones-generales)
-- [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-- [Parte obligatoria](#parte-obligatoria)
-- [Consideraciones técnicas](#consideraciones-técnicas)
-
+- [Definición del proyecto](#definición-del-proyecto)
+- [Diseño de experiencia de usuario](#diseño-de-experiencia-de-usuario)
+- [Historias de usuario](#historias-de-usuario)
+- [Primera iteración](#primera-iteración)
+- [Segunda iteración](#segunda-iteración)
+- [Desarrollo Front-end](#desarrollo-front-end)
+- [Herramientas](#herramientas)
+- [Checklist](#checklist)
+- [Consideraciones generales](#consideraciones-generales)
+- [Colaboradores](#colaboradores)
 
 ## Preámbulo
 
@@ -22,11 +28,95 @@ Este es precisamente nuestro reto, ayudar a las personas a decidir rápida y fá
 
 Con esta web app pretendemos ayudar a nuestros usuarios a reducir tiempo en la elección de una película en base a su estado de ánimo, sugiriéndoles qué películas pueden ver mediante una lista de 6 películas para que decidan cuál de ellas ver. 
 
-### Historia de usuario
+## Diseño de experiencia de usuario 
 
-Al realizar las historias de nuestros usuarios, encontramos que:
+### Metodologías usadas
 
-- Usuario 1: Yo como usuario quiero decidir fácil y rápidamente qué película ver para no pasar tanto tiempo buscando opciones.
+- Scrum:
+Trabajamos de manera adaptativa, iterativa y flexible.
+
+- Metodología Kanban:
+La utilizamos para la gestión de nuestro proyecto, usando tarjetas visuales para la organizacón de las tareas enfocadas en nuestra historia de usuario.
+
+### Heurísticas de usabilidad
+
+Para la realizacion de este proyecto, tomámos en cuenta lo siguente: 
+
+- Visibilidad del estado del sistema:
+Brindando al usuario una respuesta en el menor tiempo posible.
+
+- Relación entre el sistema y el mundo real:
+Usandoun lenguaje familiar para el usuario, con información en orden lógico y natural.
+
+- Libertad y control por parte del usuario:
+Dando la facilidad a nuestros usuarios de poder deshacer o repetir una acción realizada.
+
+- Reconocer antes que recordar:
+Haciendo visibles acciones y opciones para que el usuario no tenga que recordar, manteniéndo un estándar en el diseño visual para que los elementos de la interfaz sean consistentes en diferentes pantallas.
+
+- Flexibilidad y eficiencia en el uso
+Desarrollando una herramienta útil para usuarios básicos y avanzados.
+
+- Diseño estético y minimalista
+Incluyendo información relevante y estrictamente necesaria.
+
+### Historias de usuario
+
+Al realizar las historias de nuestros usuarios, encontramos lo siguiente:
+
+- Usuario: Yo como usuario quiero decidir fácil y rápidamente qué película ver para ahorrar tiempo buscando opciones.
+
+#### Prototipado de baja fidelidad
+
+Nuestro primero sketch fue el siguiente:
+
+[Prototipado de baja fidelidad](https://drive.google.com/drive/folders/1RxA25gX8C3Rk1bDvO8fNOb5MvuCEhVxc?usp=sharing)
+
+#### Encuestas 
+
+10 encuestados (formulario):
+[Formulario](https://docs.google.com/forms/d/1WSfhLhB1_lwpoO8pb5ycFZwXzMlvPrQQs6iONzO8MGc/edit#responses)
+
+5 entrevistados:
+
+- Oswaldo, 22 años / Lead teacher en Ironhack
+- Cristian, 30 años / Vendedor corporativo de Ocesa
+- Mary, 26 años / Seguridad privada
+- Jhon, 32 años / Coach en Laboratoria
+- Joselyn, 25 años / Desarrolladora Web
+[Fotos de entrevistados](https://docs.google.com/document/d/1JTsv02vSCNd5qnXdK68xRfG9vaU6fGGoJUuvmlkWtxE/edit)
+
+### Primera iteración
+
+#### Validamos nuestra hipótesis
+
+Los usuarios encuestados respondieron que tardan de 10 a 20 minutos en decidir qúe película on line verán, consideran que es mucho tiempo para tomar una decisión, también les interesa usar una herramienta que les facilíte esta elección y que sea de uso rápido y fácil, sin mucho tiempo de carga. 
+
+- Ubicamos a nuestros usuarios principales
+
+### Segunda iteración
+
+#### Prototipado de alta fidelidad
+
+El prototipo de alta fidelidad responde a las primeras necesidades de nuestros usuarios verificadas en el primer testeo del producto, entre ellas: interfaz veloz, dispositivo mobile, pocos pasos (clicks), 6 estados de ánimo claros y en relación a su icono, lista de 6 a 8 películas, ficha téncina con portada, título, calificación y sinópsis.
+
+[Prototipado de alta fidelidad](https://www.figma.com/proto/XkUJ9zPHCofieqMNYWMj9I3o/Movies?node-id=62%3A138&scaling=scale-down)
+
+#### Testeos de usabilidad
+
+[Testeo de usabilidad](https://docs.google.com/document/d/1Br_7VyrTDQdzYT3DARwK3-gyzWsoe0c5Fidn8ChKSUw/edit?usp=sharing)
+
+Observaciones de los usuarios:
+
+- Es simple en su uso
+- La interfaz parece un juego, te invita a usarlo y probarlo.
+- Los botones son claros excepto el de "aventura"
+- Estaría padre que tuviera un playlist de películas (guardar mi lista)
+- Al elegir la película, te direccione a un servicio de streaming (Netflix).
+
+En esta segunda iteración recibimos comentarios positivos en cuanto al diseño e idea. Observamos que responde a las necesidasdes de nuestros usuarios al requerir pocos clicks en su navegación, los 6 botones para cada estado de ánimo son claros excepto el de "aventura", el número de películas mostradas es fácil de ver, junto con la ficha téncina con portada, título, calificación y sinópsis. En general esta web app les parece intuitiva y de fácil navegación, además cumple con los puntos de la heurística que determinamos al inicio del proyecto.
+
+Concluimos que esta herramienta web reduce el tiempo que los usuarios invierten en elegir una película, facilitándole esta tarea mediante la elección de su estado de ánimo, Además en un segundo alcance, podría servir como apoyo para las plataformas que transmiten películas on line, resolviendo la problemática del tiempo e indecisión de los usarios. 
 
 ### Diseño de la Interfaz de Usuario
 
@@ -40,7 +130,7 @@ Con el objetivo de facilitar a los usuarios la búsqueda y elección de una pel�
 
 - Color: Basada en los resultados de las encuestas, en la psicología del color, así como la invesitigación en las aplicaciones de cine, determinamos lo siguiente: 
 
-1. Rojo: Mood Valiente
+1. Rojo: Valiente
 2. Azul: Nostalgia
 4. Naranja: Aventurero
 5. Rosa: Romántico
@@ -51,130 +141,46 @@ Con el objetivo de facilitar a los usuarios la búsqueda y elección de una pel�
 
 - Plecas: Se utilizaron para dividir visualmente cada sección de la página.  
 
-#### Prototipo de baja fidelidad
-Para iniciar nuestro diseño partimos desde un dispositivo mobile. Nuestros primeros sketch son los siguientes:
+## Desarrollo Front-end
 
-![Pantalla inicio](./src/assets/images/imagen_sket3.jpg)
-![Pantalla 1](./src/assets/images/imagen_sket1.jpg)
-![Pantalla 2](./src/assets/images/imagen_sket2.jpg)
-![Pantalla 3](./src/assets/images/imagen_sket4.jpg)
+### Herramientas
 
-#### Prototipo de alta fidelidad
-El prototipo de alta fidelidad sufrió cambios a lo largo de las iteraciones del producto, con base a los resultados obtenidos en las encuestas.
+- Java Script Vanilla
+- CSS con diseño responsivo
+- HTML5
 
-![Prototipo 1](./src/assets/images/PrototypeAlta_01.jpg)
-![Prototipo 2](./src/assets/images/PrototypeAlta_02.jpg)
+### Métodos y Funciones utilizadas
 
-#### Testeos de usabilidad
+- Filter
+- Funciones puras
+- Fetch
 
-Se realizaron encuestas principalmente a profesionales y voluntarios que trabajan en asociaciones no lucrativas. Con el objetivo de conocer su principal impresión del producto.
+Indeci-issues funciona gracias a Open Movie Data Base, con la propiedad **LocalStorage** almacenamos los datos de la API en el navegador del usuario para poder consumirlos.
 
-Los principales problemas que se detectaron en las pruebas de usabilidad fueron:
+Se implementó una **función** que usa el **método filter()** para clasificar y mostrar el contenido a partir de dos párametros: la categoría y la base de datos almacenada.  
 
--Páginas muy complejas de manejar.
+## Herramientas
 
--Páginas con diseño poco atractivo.
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [GitHub Pages](https://pages.github.com/)
+- [Figma](https://www.figma.com/)
+- [Realtime Board](https://realtimeboard.com/)
 
--Páginas con mucha información.
+## Checklist
 
--Páginas con información no jerarquizada.
-
-![Encuesta 1](./src/assets/images/usabilidad_1.png)
-![Encuesta 2](./src/assets/images/usabilidad_2.png)
-![Encuesta 3](./src/assets/images/usabilidad_3.png)
-![Encuesta 4](./src/assets/images/usabilidad_4.png)
-![Encuesta 5](./src/assets/images/usabilidad_5.png)
-
-## Segunda iteración 
-
-### Historia de mi Proto Persona
-
-Datos personales:
-
-Nombre: Gabriela Rocha
-Edad: 35 años
-Ciudad de México
-Estudios: Psicología, Maestría en Administración Pública
-Empresa y Cargo: Laboratoria / Partner & COO  (Socia y Directora de Operaciones)
-Labor en la empresa: Dirigir los equipos de Operaciones de Laboratoria en América Latina, identificar y lanzar nuevas ubicaciones para el crecimiento y fortalecer la cultura de la organización en todos los equipos.
-Medio de transporte al trabajo: Coche
-Dispositivos tecnológicos usa regularmente: Móvil, Laptop (apple)
-Dispositivo tecnológico que usa principalmente para obtener información: Móvil, Laptop
-
-### Historias de usuario
-
-- Yo como usuario necesito conocer los niveles en educación de las mujeres en América Latina para identificar zonas de mayor necesidad, y así, proponer y lanzar nuevas ubicaciones para la expansión de la organización a la que pertenezco.  
-
-#### Testeos de usabilidad
-
-Se realizaron test con usuarios de escolaridad mínima de licenciatura, en actividad laboral, viviendo en la Ciudad de México, en edades de los 30 a los 35 años de edad.
-
-La prueba se realizó con el uso de la web app versión desktop, teniendo 10 minutos para navegar en la página web.
-
-Los comentarios de los usuarios despúes de la prueba, fueron:
-
-- El logo parece arbolito de navidad.
-- Para el botón de estadísticas hace falta un texto que haga referencia al contenido que va a mostrar.
-- Botón de estadísticas, la transparencia del hover no es legible.
-- Radios: Incluir que se ordenan los porcentajes (%).
-- Hacer tablas o gráficas para mayor comprensión de los datos.
-- Botones de cada país con hover o encendido-on, una ves que se selecciona uno de ellos.
-- Texto descriptivo que haga referencia al indicador que se despliega. 
-- Selector de indicadores con texto previa (placeholder). 
-- En la tabla resaltar los porcentajes (%).
-- Resumir sección “nosotros”.
-- Contacto: Quitar telefonos, sobran.
-
-#### Prototipo de alta fidelidad
-El prototipo de alta fidelidad sufrió cambios a lo largo de las iteraciones del producto, con base a los resultados obtenidos en las encuestas.
-
-![Prototipo de Testeo](./src/index.html)
-![Prototipo Iterado](https://marvelapp.com/b2abb6e/screen/53746532)
-
-### Pruebas unitarias
-
-## Consideraciones técnicas
-
-La lógica del proyecto está implementada completamente en JavaScript
-(ES6), HTML y CSS. 
-
-Se implementaron pruebas unitarias para validar las funciones encargadas de procesar, filtrar y ordenar la data. Estos test se realizaron con [Jest](https://jestjs.io/).
-
-Como gestor de proyecto de utilizó NPM (Node Package Manager).
-
-El _boilerplate_ contiene una estructura de archivos como punto de partida así
-como toda la configuración de dependencias:
-
-```text
-.
-├── package.json
-├── README.md
-├── src
-│   ├── data
-│   │   ├── injuries
-│   │   │   ├── injuries.js
-│   │   │   └── injuries.json
-│   │   ├── lol
-│   │   │   ├── lol.js
-│   │   │   └── lol.json
-│   │   ├── pokemon
-│   │   │   ├── pokemon.js
-│   │   │   └── pokemon.json
-│   │   ├── steam
-│   │   │   ├── steam.js
-│   │   │   └── steam.json
-│   │   └── worldbank
-│   │       ├── worldbank.js
-│   │       └── worldbank.json
-│   ├── data.js
-│   ├── index.html
-│   ├── main.js
-│   └── style.css
-└── test
-    └── data.spec.js
-
-8 directories, 17 files
-```
+- [ ] Usa VanillaJS.
+- [ ] No hace uso de `this`.
+- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
+- [ ] Incluye historias de usuario en `README.md`.
+- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+      `README.md`.
+- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+      en `README.md`.
+- [ ] Incluye el listado de problemas que detectaste a través de tests de
+      usabilidad en el `README.md`.
+- [ ] UI: Permite ordenar data por uno o más campos.
+- [ ] UI: Permite filtrar data en base a una condición.
 
 ## Cómo empezar a trabajar en el proyecto
 
@@ -189,69 +195,18 @@ Para empezar se sugiere:
    pruebas unitarias (unit tests) con el comando `npm test`.
 5. A codear se ha dicho! :rocket:
 
-
-## Contenido de referencia
-
-### Diseño de experiencia de usuario (User Experience Design)
-
-- Investigación con usuarios / entrevistas, encuestas, testeo de interfaz
-- Principios de diseño visual
-
-### Desarrollo Front-end
-
-- xxxxx
-
-### Herramientas
-
-- [Git](https://git-scm.com/)
-- [GitHub](https://github.com/)
-- [Figma](https://www.figma.com/)
-- [Realtime Board](https://realtimeboard.com/)
-- [GitHub Pages](https://pages.github.com/)
-- [Node.js](https://nodejs.org/)
-
-
-## Checklist
-
-- [ ] Usa VanillaJS.
-- [ ] No hace uso de `this`.
-- [ ] Pasa linter (`npm pretest`)
-- [ ] Pasa tests (`npm test`)
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-      lines y branches.
-- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-      `README.md`.
-- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-      en `README.md`.
-- [ ] Incluye el listado de problemas que detectaste a través de tests de
-      usabilidad en el `README.md`.
-- [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-- [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-- [ ] UI: Permite filtrar data en base a una condición.
-
-## Checklist (Opcional)
-
-- [ ] Escribir nuestro checklist.
-
-
 ## Consideraciones generales
 
 - Este proyecto fue desarrollado por un equipos de 5 personas.
 - Usa la API de [OMDB](http://www.omdbapi.com/) (The Open Movie Database).
 - Tiempo en que se completó el reto: 3 días.
 
-## Parte Obligatoria
+## Colaboradores
 
-- Todo el planeamiento del trabajo deberá ser detallado en un repositorio único
-  por _squad_ en el que se presente el _planning_, el _research_, los _sketches_
-  y las inspiraciones utilizadas para definir el producto.
-- Además, deberás detallar en el archivo _readme_, qué hizo cada una en el
-  proyecto.
-- El producto deberá presentarse publicado en github pages.
+- Lorena Bellacetín: Front-end development, implementación de funciones en js/ html
+- Karen Martínez Front-end-development, implementación de funciones js/html
+- Claudia Ramírez Front-end-development. implementación de funciones
+- Diana Yoalli Peláez Gómez: UX Experience, encuestas a usuarios, testeo de usabilidad, flujo de información de la interfaz (prototipo de baja y alta fidelidad).
+- Andrea Ramírez: UX Experiencie, encuestas y testeo de usabilidad, flujo de información de la interfaz (prototipo de baja y alta fidelidad).
 
-## Consideraciones técnicas
-
-- El diseño visual de los componentes es de libre elección.
-- Pueden usar algún framework de css si así lo deciden.
+* Cada una de las integrantes participó activamente en la ideación de este producto.
