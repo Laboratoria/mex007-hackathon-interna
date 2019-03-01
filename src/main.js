@@ -1,3 +1,6 @@
+const topDisplay = document.getElementById("top");
+const RecomDisplay = document.getElementById("recommendation");
+const PremiDisplay = document.getElementById("new");
 const sectionPremier = document.getElementById('section-premier');
 const sectionTop = document.getElementById('section-top');
 const movieFilterByLetter = document.getElementById('movies-sci-fi-filter');
@@ -52,7 +55,6 @@ const printMoviesPrem = (dataMovieList) => {
 //Funciín que filtra por conincidencia en Titulo, Director o año
 const filterCoincidence = () => {
   searchLett.addEventListener("keyup", () => {
-
     let searchValue = document.getElementById("search").value;
     printMovies(window.data.filterByConside(dataMovieList, searchValue));
   });
@@ -60,6 +62,9 @@ const filterCoincidence = () => {
 
 //Función para ordenar por calificacion de Ranking
 topTenOrder.addEventListener("click", () => {
+  topDisplay.style.display = "block";
+  PremiDisplay.style.display = "none";
+  RecomDisplay.style.display = "none";
   arrayNewOrder = window.data.orderData(dataMovieList);
   arrayTenMovies = arrayNewOrder.slice(0, 10);
   printMoviesTop(arrayTenMovies);
@@ -68,11 +73,13 @@ topTenOrder.addEventListener("click", () => {
 
 //Funcion para filtrar por año
 movieRelease.addEventListener("click", () => {
-    arrayMovie = window.data.filterbyYear(dataMovieList);
-    printMoviesPrem(arrayMovie);
+  topDisplay.style.display = "none";
+  PremiDisplay.style.display = "block";
+  RecomDisplay.style.display = "none";
+  arrayMovie = window.data.filterbyYear(dataMovieList);
+  printMoviesPrem(arrayMovie);
 })
 
 //Invocando funciónes
 dataMovie();
 filterCoincidence();
-

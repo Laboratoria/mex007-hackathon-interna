@@ -56,6 +56,13 @@ border-radius: 5%;
   width: 50%;
 }
 
+#top {
+  display: none;
+}
+#new {
+  display: none;
+}
+
 .btn{
     background: #50576a;
 }
@@ -66,3 +73,8 @@ text-decoration: blink;
 font-family: sans-serif;
     padding: 4%;
 }
+
+
+
+
+
