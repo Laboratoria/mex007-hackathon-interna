@@ -1,35 +1,3 @@
-##Hola
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # "Hackathon" de final de _Common Core_, películas
 
 # Indeci-issues
