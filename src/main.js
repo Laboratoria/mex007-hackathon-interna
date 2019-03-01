@@ -10,7 +10,7 @@ const dataFilter = document.getElementById("data-filter");
 const movieRelease = document.getElementById("Year");
 const homeDisplay = document.getElementById("home");
 const dataMovieList = [];
-const imbId = ['tt0437086','tt4154664','tt2527338','tt0076759',
+const imbId = ['tt4154664','tt2527338','tt0076759',
   'tt3659388','tt0118884','tt0756683','tt0816692','tt0079945',
   'tt2649554','tt0379786','tt0087004','tt3967856',
   'tt0087182','tt0387808','tt0123755','tt0119654',
@@ -19,7 +19,7 @@ const imbId = ['tt0437086','tt4154664','tt2527338','tt0076759',
   'tt0084827','tt0083658', 'tt1454468', 'tt0499549',
   'tt0106062', 'tt0079501', 'tt0796366', 'tt0888496',
   'tt0084827', 'tt0088763', 'tt0078748', 'tt3188542', 
-  'tt2087752','tt0096251','tt1312171','tt2076822',
+  'tt2087752','tt0096251','tt2076822',
   'tt5968394','tt0448115','tt2274648','tt2935510','tt3741700','tt2283336'
 ];
 
@@ -60,7 +60,7 @@ const printMoviesPrem = (dataMovieList) => {
     
     </div>`;
     sectionPremier.insertAdjacentHTML("beforeend", nameMovies);
-
+    
   })
 };
 
