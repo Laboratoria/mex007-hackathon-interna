@@ -1,5 +1,5 @@
 if (window.location.pathname === '/src/views/login' || window.location.pathname === '/privado/src/views/login.html') {
-console.log(location.pathname)
+  console.log(location.pathname)
   const signIn = document.getElementById('sign-in')
 
   signIn.addEventListener('click', () => {
@@ -8,7 +8,7 @@ console.log(location.pathname)
     console.log(email, password)
     if (password.length < 6) {
       email.value = ''
-      password.value= ''
+      password.value = ''
       M.toast({
         html: 'Por favor ingresa una contraseña de mas de 6 caracteres'
       })
@@ -46,6 +46,32 @@ console.log(location.pathname)
 
 
   googlebtn.addEventListener('click', googleAuth)
+
+
+  const loginBtn = document.getElementById('login-btn')
+
+  const logIn = () => {
+    const email = document.getElementById('email-login').value
+    const password = document.getElementById('password-login').value
+    if (password.length < 6) {
+      email.value = ''
+      password.value = ''
+      M.toast({
+        html: 'Por favor ingresa una contraseña de mas de 6 caracteres'
+      })
+    }
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      M.toast({
+        html: 'Usuario no enconrado' + ' ' +errorMessage
+      })
+      // ...
+    });
+  }
+
+  loginBtn.addEventListener('click', logIn)
 }
 
 const logOutBtn = document.getElementById('log-out')
@@ -59,20 +85,20 @@ firebase.auth().onAuthStateChanged(function (user) {
     // User is signed in.
     var user = firebase.auth().currentUser;
     console.log(user)
-    if (location.pathname === '/src/views/login' || window.location.pathname ==="/privado/src/views/login.html") {
+    if (location.pathname === '/src/views/login' || window.location.pathname === "/privado/src/views/login.html") {
       location.href = './../views/muro.html'
     }
     printPerfil(user)
 
-  } else {  //Si no esta logueado el usuario
-    if (location.pathname === '/src/views/muro'){
+  } else { //Si no esta logueado el usuario
+    if (location.pathname === '/src/views/muro') {
       console.log('esta en local sin usuario');
-          location.href = './../views/login.html'
+      location.href = './../views/login.html'
     }
-  if (location.pathname === '/privado/src/views/muro.html'){
-    console.log('esta en repo sin usuario');
-        location.href = './login.html'
-      }
+    if (location.pathname === '/privado/src/views/muro.html') {
+      console.log('esta en repo sin usuario');
+      location.href = './login.html'
+    }
     console.log('no hay usuario logeado')
     // No user is signed in.
   }
