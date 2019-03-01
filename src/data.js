@@ -9,7 +9,6 @@ filterInput: (dataMovies, letter) => {
     else{
     return search;
     }
-
   },
 
   filterData: (dataMovies, optionFilter) => {
