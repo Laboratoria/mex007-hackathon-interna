@@ -52,7 +52,7 @@ const logOutBtn = document.getElementById('log-out')
 let provider = new firebase.auth.GoogleAuthProvider();
 
 
-
+console.log('cambio')
 
 firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
@@ -71,7 +71,7 @@ firebase.auth().onAuthStateChanged(function (user) {
     }
   if (location.pathname === '/privado/src/views/muro.html'){
     console.log('esta en repo sin usuario');
-        location.href = './privado/src/views/login.html'
+        location.href = './login.html'
       }
     console.log('no hay usuario logeado')
     // No user is signed in.
