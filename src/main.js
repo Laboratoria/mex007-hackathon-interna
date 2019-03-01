@@ -4,7 +4,7 @@ const genreButton = document.getElementById("genreButton")
 
 
 
-const artMovies = ["vertigo","Citizen Kane", "Tokyo Story","2001: A Space Odyssey", "Man With A Camera","In the Mood for Love","Rashomon"," Andrei Rublev","Mulholland Dr.","Stalker","Shoah","El Padrino II","Taxi Driver","Metropolis","Psycho","Jeanne Dielman, 23 Commerce Quay, 1080 Brussels", "Satantango", "La Dolce Vita", " Pather Panchali" ]
+const artMovies = ["vertigo","Citizen Kane", "Tokyo Story","2001: A Space Odyssey", "Man With A Camera","In the Mood for Love","Rashomon"," Andrei Rublev","Mulholland Dr.","Stalker","Shoah","El Padrino II","Taxi Driver","Metropolis","Psycho","Satantango", "La Dolce Vita", " Pather Panchali" ]
 const returnFilter = document.getElementById('return-filter');
 const browser = document.getElementById("browser");
 let dataMovies = []
@@ -35,12 +35,15 @@ const drawMovies = (arrayMovies) => {
       let movieData = `
       <div class="movie-card">
         <p class="title">${dataMovies.Title}</p>
+        <p class="genremov">${dataMovies.Genre}</p>
+        <p class="dir">Director: ${dataMovies.Director}</p>
         <p class="plot">°${dataMovies.Plot}</p>
+        
         <img class="poster" src="${dataMovies.Poster}"/>
-        <p>${dataMovies.Director}</p>
+        
       </div>`;
       sectionRoot.insertAdjacentHTML("beforeend", movieData)
-      usableGenreData
+      //usableGenreData
     })
 
 }
@@ -72,10 +75,9 @@ const selectByGenre = () => {
   for(let i=0; i < genreClass.length; i++){
     genreClass[i].addEventListener('click',() =>{
     let genreId = genreClass[i].id;
-    console.log(genreId)
      returnFilter.innerHTML = "";
      
-    const arraySelectedGenre = window.data.filterByGenre(genreId,baseDatos);
+    const arraySelectedGenre = window.data.filterByGenre(genreId,dataMovies);
     drawMovies(arraySelectedGenre);
       
   })}
@@ -84,24 +86,6 @@ selectByGenre();
 
 
 
-
-
-/*const selectByRol = () => {
-  for (let i = 0; i < rol.length; i++) {
-    rol[i].addEventListener('click', () => {
-      let rolId = rol[i].id;
-      document.getElementById("mySidenav").style.width = "0%";
-      printRolTitle.innerHTML = "";
-      printRolTitle.insertAdjacentHTML("beforeend", rolId);
-
-      const arrayRolesFiltered = window.lol.filtroDataRoles(rolId, dataLol);
-      document.getElementById("welcomeMssg").style.display = 'none';
-      printRolTitle.style.display = "block";
-      print(arrayRolesFiltered);
-    })
-  }
-}
-selectByRol();*/
 
 
 
