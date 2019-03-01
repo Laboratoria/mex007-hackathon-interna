@@ -106,40 +106,43 @@ text-align: center;
 }
 .comedy{
     background-color: #ffaf13;
-    background-image: url('./images/home/like.svg');
+    background-image: url('./images/home/happy.svg');
 
 }
 .futurista{
     background-color: #484B8d;
-    background-image: url('./images/home/like.svg');
+    background-image: url('./images/home/futur.svg');
 
 }
 .horror{
     background-color: #ce1032;
-    background-image: url('./images/home/like.svg');
+    background-image: url('./images/home/valiente.svg');
 
 }
 .aventurero{
     background-color: #ff6e1d;
-    background-image: url('./images/home/like.svg');
+    background-image: url('./images/home/avent.svg');
 
 }
 .drama{
     background-color: #567b96;
-    background-image: url('./images/home/like.svg');
+    background-image: url('./images/home/nost.svg');
 
 }
 .results{
  margin-bottom: 220px;
 }
 .results div{
+    border-radius: 10px;
     width: 30%;
-    background-color: #585858;
-    border:1px solid #585858;
+    margin-left: 2%;
+    vertical-align: top;
+    display: inline-block;
+    background-color: rgba(156, 156, 156, 0.37);
+    border: 1px solid rgba(156, 156, 156, 0.37);
 } 
 .results div img{
-    background-repeat: no-repeat;
-    background-position: center 20px;
-    background-size: 45px;
+    width: 100%;
+    
     
 }  
