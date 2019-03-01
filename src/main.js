@@ -69,28 +69,6 @@ const filterLetter = () => {
   getGenreMovies(botonFilter);
 
 
-//filtros por género de película
-const selectByGenre = () => {
-
-  for(let i=0; i < genreClass.length; i++){
-    genreClass[i].addEventListener('click',() =>{
-    let genreId = genreClass[i].id;
-     returnFilter.innerHTML = "";
-     
-    const arraySelectedGenre = window.data.filterByGenre(genreId,dataMovies);
-    drawMovies(arraySelectedGenre);
-      
-  })}
-}
-selectByGenre();
-
-
-
-
-
-
-
-
 
 
 
