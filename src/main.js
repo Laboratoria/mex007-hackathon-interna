@@ -42,8 +42,8 @@ const drawMovies = (arrayMovies) => {
 
         <p class="genremov">${dataMovies.Genre}</p>
         <p class="dir">Director: ${dataMovies.Director}</p>
-        <p class="dir"> ${dataMovies.imdbRating}</p></br>
-        <p class="dir"> ${dataMovies.Awards}</p></br>
+        <p class="rate"> Ranking: ${dataMovies.imdbRating}</p></br>
+        <p class="award"> ${dataMovies.Awards}</p></br>
         <p class="plot">°${dataMovies.Plot}</p>
         <img class="poster" src="${dataMovies.Poster}"/>
         

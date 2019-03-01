@@ -66,9 +66,9 @@ nav i{
     width: 38%;
     margin-left: 52%;
     text-align: justify;
-    font-size: 3vw;
+    font-size: 3.6vw;
     z-index: 5;
-    margin-top: 58px;
+    margin-top: 5px;
 
 }
     .movie-card{
@@ -82,7 +82,7 @@ nav i{
         text-align: center;
         font-size: 3.5vw;
         display: inline-block;
-        height: 25em;
+        height: 37em;
         background-color: #2a3440
        }
 .title{
@@ -99,7 +99,8 @@ nav i{
 .genremov{
     text-align: center;
     font-size: 12px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
+    margin-bottom: 5px;
     font-family: Laila;
 }
 .dir{
@@ -110,7 +111,17 @@ nav i{
     width: 180px;
     margin: 0 auto;
 }
- 
+.rate{
+    font-family: Laila;
+}
+.award{
+    width: 300px;
+    font-family: Laila;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 12px;
+}
 
 #header {
     margin:auto;
@@ -218,7 +229,7 @@ nav{
     text-decoration:none;
     padding:10px 15px;
     display:block;
-    width: 186.5px;
+    width: 125px;
 }
 .nav li:hover {
     background-color:#434343;
