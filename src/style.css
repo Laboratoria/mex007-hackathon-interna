@@ -25,14 +25,14 @@ width: 100%;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .title{
-font-size: 1.6rem;
-}
-.main{
-width: 100%;
-margin-top:80px;
-padding: 0 10px;
-
-}
+    font-size: 1.6rem;
+    }
+    .main{
+    width: 100%;
+    margin-top:80px;
+    padding: 0 10px;
+    
+    }
 .filter-movie{
 text-align: center;
 }
@@ -68,7 +68,6 @@ text-align: center;
     padding: .8em 1.4em;
     margin-left: -5px;
     text-transform: uppercase;
-
 }
 .mood{
     display: flex;
@@ -173,7 +172,6 @@ nav h1{
 }
 .Futurista{
     background:#484B8d;
-
 }
 .Valiente{
     background:#ce1032;
