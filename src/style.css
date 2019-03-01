@@ -45,3 +45,12 @@ opacity: .5;
   box-sizing: border-box;
   width: 50%;
 }
+
+#top {
+  display: none;
+}
+#new {
+  display: none;
+}
+
+
