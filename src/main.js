@@ -7,13 +7,13 @@ let allMovies = [];
 let resultsMovies = document.getElementById('results');
 const btn = document.getElementById('btn');
 const searcher = document.getElementById('searcher');
-let searcherValue = 
- 
+
 btn.addEventListener ('click' , () => {
   let searcherValue = searcher.value;
   console.log(searcherValue);
   const consumingApi = fetchingApi(searcherValue);
 })
+
 
 let searchResult = [];
 
@@ -28,6 +28,8 @@ return searchResult;
 };
 
 console.log(searchResult)
+
+
 
 
 for(let i= 0; i< titles.length; i++) {
@@ -45,9 +47,7 @@ for(let i= 0; i< titles.length; i++) {
       console.log(genre)
        let r = window.movies.filterGenre(allMovies , genre);
        resultadoImg (r)
-  
 })};
-
 const resultadoImg = (allMovies) => {
   resultsMovies.innerHTML="";
   allMovies.forEach(element => {
