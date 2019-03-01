@@ -1,11 +1,5 @@
 window.movies = {
     filterGenre: (data, buttonId) => {
-<<<<<<< HEAD
-        const filterMovieByGenere = data.filter(data => data.Genre.includes(buttonId));
-        return filterMovieByGenere;
-    }
-}
-=======
         const filterMovieByGenere = data.filter(data => data.Genre.includes(buttonId))
         console.log(filterMovieByGenere)
         return filterMovieByGenere
@@ -18,4 +12,3 @@ window.movies = {
         }
 
 };
->>>>>>> da57d449a512b46b39f66693b7a215b7941a008d
