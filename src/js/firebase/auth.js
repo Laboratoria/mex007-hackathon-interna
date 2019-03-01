@@ -64,21 +64,15 @@ firebase.auth().onAuthStateChanged(function (user) {
     }
     printPerfil(user)
 
-  } else {
-    if (location.pathname === '/src/views/login'){
-      console.log('esta en repo');
-       if (window.location.pathname !== '/src/views/login') {
-        console.log(window.location.pathname !== '/src/views/login')
+  } else {  //Si no esta logueado el usuario
+    if (location.pathname === '/src/views/muro'){
+      console.log('esta en local sin usuario');
           location.href = './../views/login.html'
-        }
     }
-  if (location.pathname === '/privado/src/views/login.html'){
-    console.log('esta en repo');
-     if (window.location.pathname !== '/privado/src/views/login.html') {
-      console.log(window.location.pathname !== '/privado/src/views/login.html')
-        location.href = './../views/login.html'
+  if (location.pathname === '/privado/src/views/muro.html'){
+    console.log('esta en repo sin usuario');
+        location.href = './privado/src/views/login.html'
       }
-  }
     console.log('no hay usuario logeado')
     // No user is signed in.
   }
