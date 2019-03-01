@@ -8,21 +8,17 @@
     <title>Kinema</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyB7GXBBC-zGzl8MEtcm4gfC7QvVc9_fC9g",
-    authDomain: "kinema-276b7.firebaseapp.com",
-    databaseURL: "https://kinema-276b7.firebaseio.com",
-    projectId: "kinema-276b7",
-    storageBucket: "kinema-276b7.appspot.com",
-    messagingSenderId: "956703192108"
-  };
-  firebase.initializeApp(config);
-</script>
+    
 </head>
 <body>
     <main>
+        
+        <button id = "movie"  class = "type"> MOVIE</button>
+        <button id = "series" class = "type" >SERIES</button>
+    </main>
+    <main>
+        <input type="search" id="letter" placeholder="Busca por título de película">
+        <input type="search" id = "director" placeholder=" Busca por Director">
             <button id = "Animation" class="boton-type-chart">Animation</button>
             <button id = "Action" class="boton-type-chart">Action</button>
             <button id= "Adventure" class="boton-type-chart"> Adventure</button>
@@ -52,7 +48,7 @@
 
        </article>
    </main>
-    
+   <script src="./firebase.js"></script>
     <script src="./main.js"></script>
     <script src="./data.js"></script>
 </body>
