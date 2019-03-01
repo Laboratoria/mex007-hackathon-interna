@@ -33,7 +33,6 @@ const moviesData = () => {
             .then(response => response.json())
             .then(data => {
                 movieData = data;
-                // console.log(data)
                 allMovies.push(movieData);
                 return allMovies
             })
@@ -63,7 +62,6 @@ moviesData();
 search.addEventListener('keyup', () => {
     let name2 = search.value;
     let filtered = window.movie.filterByTitle(allMovies, name2);
-    console.log(name2);
     if (name2 == "") {
         printData(allMovies);
     } else {
@@ -76,7 +74,6 @@ const selectGenre = () => {
     for (let i = 0; i < classButton.length; i++) {
         classButton[i].addEventListener("click", () => {
             let genreId = classButton[i].id;
-            console.log(genreId);
             const arrayFiltered = window.movie.filterByGenre(allMovies, genreId);
             printData(arrayFiltered);
         })
