@@ -1,6 +1,6 @@
 const cardMovie = document.getElementById('card-movie');
 const search = document.getElementById('search');
-const classButton = document.getElementsByClassName('buttons-menu'); 
+const classButton = document.getElementsByClassName('buttons-menu');
 
 let idArray = ["Harry Potter and the Sorcerer's Stone", 'Harry Potter and the Goblet of Fire',
     'Harry Potter and the Deathly Hallows: Part 2', 'Harry Potter and the Prisoner of Azkaban',
@@ -61,7 +61,7 @@ moviesData();
 search.addEventListener('keyup', () => {
     let name2 = search.value;
     let filtered = window.movie.filterByTitle(allMovies, name2);
-console.log(name2); 
+    console.log(name2);
     if (name2 == "") {
         printData(allMovies);
     } else {
@@ -72,13 +72,13 @@ console.log(name2);
 // //Esta función es para seleccionar el genero por el cual se va a filtrar
 const selectGenre = () => {
     for (let i = 0; i < classButton.length; i++) {
-      classButton[i].addEventListener("click", () => {
-        let genreId = classButton[i].id;
-        console.log(genreId); 
-        const arrayFiltered = window.movie.filterByGenre(allMovies, genreId);
-        printData(arrayFiltered);
-      })
+        classButton[i].addEventListener("click", () => {
+            let genreId = classButton[i].id;
+            console.log(genreId);
+            const arrayFiltered = window.movie.filterByGenre(allMovies, genreId);
+            printData(arrayFiltered);
+        })
     }
-  };
+};
 
 selectGenre(); 

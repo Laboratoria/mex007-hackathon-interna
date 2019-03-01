@@ -125,4 +125,15 @@ header{
 h1{
     font-size: 1em; 
     text-align: center; 
+    padding: 5px; 
+}
+
+h2{
+    font-size: 1em; 
+    text-align: center; 
+    padding: 5px; 
+}
+
+.hide {
+text-align: center;
 }
