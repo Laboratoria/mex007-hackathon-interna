@@ -23,7 +23,6 @@ La aplicación está estructurada utilizando:
 - data.js: es donde se implementan los eventos del DOM para permitir interacción con el usuario al mostrar y ordenar la data, el cual debe estar exportado en el objeto global (window).
 - html/index: tiene la estructura de la página.
 - CSS: permite dar el diseño a la interfaz en elementos como la tipografía, color, imagen de fondo, acomodar los elementos como textos, imágenes, botones, lista desplegable, encabezado, contenido y pie de página.
-<<<<<<< HEAD
 - Prototipos: Carpeta de imágenes galería con los prototipos de baja y alta fidelidad.
 - Encuestas: Carpetas de gráficas de los test realizados.
 
@@ -33,24 +32,11 @@ La aplicación está estructurada utilizando:
 ## Definición de Usuario##
 Personas de 18 a 45 años que comienzan, quieren y buscan la manera de adentrarse al mundo del Cine de Arte culto y para esto desean obtener información sintetizada de las películas para animarse a verlas y ampliar su acervo cinéfilo.
 
-=======
-- Carpeta de imágenes: galería con los prototipos de baja y alta fidelidad, así como la evidencia de las encuestas realizadas.
-
-## Ejecución de pruebas
-El boilerplate contiene la configuración necesaria para ejecutar los tests, en este caso las pruebas unitarias.
-Se ejecutan eslint y htmlhint para verificar el HTML y JavaScript con respecto a una guías de estilos. Ambas tareas se ejecutan automáticamente antes de ejecutar las pruebas cuando se escribe el comando npm run test. 
-Finalmente, está el code coverage para ver el nivel de cobertura de los tests también utilizando el comando npm run test.
-
-## Definición del producto
-**Cinema ** es una app diseñada para aquellas personas que están adentrándose en el cine de arte (también conocido como cine independiente o cine de autor) y, por tal motivo, buscan qué películas pueden ver. 
- 
->>>>>>> upstream/master
 ## Historias de usuario
 1. Yo, como usuario que empiezo a conocer sobre cine de arte, quiero encontrar las películas por su nombre para así poder llegar a ella con facilidad.
 
 2. Yo, como usuario que empiezo a conocer sobre cine de arte, quiero encontrar películas a partir del nombre del director para ver todas las de su autoría.
 
-<<<<<<< HEAD
 3. Yo, como usuario que empiezo a conocer sobre cine de arte, quiero saber lo más relevante de una película por medio de una breve sinopsis para tener una idea de su contenido.
 
 4. Yo, como usuario, quiero ver las películas que tienen algún tipo de premiación, para tener una garantía de que es una buena película.
@@ -58,14 +44,6 @@ Finalmente, está el code coverage para ver el nivel de cobertura de los tests t
 ## Diseño de experiencia de usuario (User Experience Design):
 **Ideación**
 El objetivo es lograr que la interacción sea intuitiva, fácil de usar y que logre alcanzar a introducir efectivamente a nuestro usuario al mundo del Cine de Arte Culto.
-=======
-3. Yo, como usuario, quiero saber lo más relevante de una película por medio de una  sinopsis para saber si quiero o no ver dicha película.
- 
-## Diseño de experiencia de usuario (User Experience Design):
-**Ideación**
-El objetivo es lograr que la interacción sea intuitiva, fácil de usar. La interacción ocurre en una sola pantalla en la que el usuario realiza una búsqueda por título de película o director en el campo de búsqueda. Como resultado, la página filtrará el resultado.
-Debajo del buscador hay un menú en el que el usuario puede hacer búsqueda de películas por género, director o por premiaciones y finalmente está la opciónd de "acerca de" en donde se despliega información sobre el objetigo de la página, que es brindar información y recomendación de películas para que la gente pueda tomar decisión para ver o no una cinta, así como también una aclaración sobre la definición de cine de arte.
->>>>>>> upstream/master
 
 ##Fotos de los bocetos hechos en hoja con bolígrafo
 ![GitHub Boceto](src/prototipos/boceto1.jpg)
