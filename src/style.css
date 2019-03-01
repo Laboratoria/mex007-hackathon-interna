@@ -103,9 +103,6 @@ footer{
       vertical-align: bottom;
 }
 
-
-element.style {
-}
 .fa, .fas {
     font-weight: 900;
 }
@@ -140,3 +137,8 @@ element.style {
 #new {
   display: none;
 }
+#rating { font-size: 0; }
+#rating span { font-size: 40px; }
+#rating span::before { content: "☆"; }
+#rating span.active::before {content: "★"; }
+#rating span:hover { cursor: pointer; }

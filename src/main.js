@@ -44,6 +44,13 @@ const printMoviesTop = (dataMovieList) => {
     let nameMovies =
       `<div class="data"><img id="${dataMovieList.Title}" src="${dataMovieList.Poster}"><h5>Title: ${dataMovieList.Title}</h5><p>Year: ${dataMovieList.Year}</p>
     <p>Rating: ${dataMovieList.imdbRating}</p>
+    <div id='rating'>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
     </div>`;
     sectionTop.insertAdjacentHTML("beforeend", nameMovies);
 
@@ -117,6 +124,15 @@ homeDisplay.addEventListener("click", () => {
   RecomDisplay.style.display = "block";
   
 })
+
+//Stars Rating
+document.querySelector('#rating').addEventListener('click', function (e) {
+  let action = 'add';
+  for (const span of this.children) {
+      span.classList[action]('active');
+      if (span === e.target) action = 'remove';
+  }
+});
 
 //Invocando funciónes
 dataMovie();
