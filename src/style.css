@@ -3,24 +3,46 @@
 }
 
 body {
-    background-color: #50c3c6;
+    background-color: black;
+    font-family: "Myriad Pro";
 }
 
 header{
+    background-color: black;
+    position: fixed;
     width: 100%;
-    display: block; 
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#container {
+    position: relative;
+    top: 20%; 
+}
+
+#separador {
+    height: 50px;
+    width: 100%;
 }
 
 #search {
     width: 40%; 
     float: right;
-    margin-top: 10px; 
+    margin-top: 18px; 
     margin-right: 10px;
+    border-radius: 50px;
+    text-align: center; 
+    font-size: 0.7em; 
+    background-image: url(./images/buscador.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 #logo2 {
     width: 40%; 
-    margin-top: 0px; 
+    margin-top: 7px; 
     margin-left: 10px;
     float: left;
 }
@@ -28,7 +50,6 @@ header{
 #card-movie {
     width: 85%;
     margin: 0 auto;
-    background-color: pink;
 }
 
 .movie-container{
@@ -48,12 +69,12 @@ header{
 
 #posters {
     width: 100%;
-    position: relative;
+    
 }
 
 #title {
     font-size: 0.7em;
-    color: blue;
+    color: white;
     height: 35px; 
     text-align: center;
 }
