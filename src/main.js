@@ -42,11 +42,13 @@ const moviesData = () => {
     }
 };
 
+ const movies = document.getElementsByClassName('movies-container'); 
+
 // //Función para imprimir la data en el HTML
 const printData = (allMovies) => {
     cardMovie.innerHTML = " ";
     allMovies.forEach(movies => {
-        let result = `<div class="movie-container"> 
+        let result = `<div id='${movies.imdbID}' class="movie-container"> 
     <div class="background-poster" style="background-image:url(${movies.Poster})"> </div>
       <div id="title">        
       <p>${movies.Title}</p>
@@ -55,6 +57,18 @@ const printData = (allMovies) => {
       </div>`;
         cardMovie.insertAdjacentHTML("beforeend", result);
     });
+
+//se abra el modal, obtiene del id de la película
+
+for (let i = 0; i < movies.length; i++) {
+    movies[i].addEventListener("click", () => {
+      let movieSelected = movies[i].id;
+      const movie2 = window.movie.toModal(allMovies, movieSelected);
+      printModal(movie2);
+      modalChamp.classList.remove('hide');
+    })
+  }; 
+
 }
 moviesData();
 
