@@ -37,7 +37,7 @@ const drawMovies = (arrayMovies) => {
         <p class="title">${dataMovies.Title}</p>
         <p class="genremov">${dataMovies.Genre}</p>
         <p class="dir">Director: ${dataMovies.Director}</p>
-        <p class="plot">°${dataMovies.Plot}</p>
+        <p class="plot">${dataMovies.Plot}</p>
         
         <img class="poster" src="${dataMovies.Poster}"/>
         
