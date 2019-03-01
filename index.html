@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ </head>
 <header>
         <nav>
             <img  class="logo" src="assets/cine.png">
@@ -18,17 +20,16 @@
             <ul class="nav">
                 <li id="genreButton">Género
                     <ul>
-                        <li id="Adventure"class="genre">Aventura</li>
-                        <li id="Short" class="genre">Corto</li>
-                        <li id= "Comedy" class="genre">Comedia</li>
-                        <li id="Crime" class="genre">Crimen</li>
-                        <li id="Documentary" class="genre">Documental</li>
-                        <li id="Drama"class="genre">Drama</li>
-                        <li id="Sci-Fi" class="genre">Ciencia Ficción</li>
-                        <li id="History" class="genre">Historia</li>
-                        <li id="Mystery" class="genre">Misterio</li>
-                        <li id="Romance" class="genre">Romance</li>
-                        <li id="Suspense" class="genre">Suspenso</li>
+                            <li id="Adventure"class="genre">Aventura</li>
+                            <li id="Short" class="genre">Corto</li>
+                            <li id="Comedy" class="genre">Comedia</li>
+                            <li id="Crime" class="genre">Crimen</li>
+                            <li id="Documentary" class="genre">Documental</li>
+                            <li id="Sci-Fi" class="genre">Ciencia Ficción</li>
+                            <li id="History" class="genre">Historia</li>
+                            <li id="Mystery" class="genre">Misterio</li>
+                            <li id="Romance" class="genre">Romance</li>
+                            <li id="Suspense" class="genre">Suspenso</li>
                 </li>
             </ul>
             <li>Director
@@ -58,12 +59,36 @@
             </ul>
         </nav>
     </header>
-    <section id="return-filter"></section>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <button type="button" class="d-block w-100 image-pulp-fiction imagen-top" ></button>
+              </div>
+              <div class="carousel-item">
+                    <button type="button" class="d-block w-100 image-the-shining imagen-top" ></button>
+              </div>
+              <div class="carousel-item">
+                    <button type="button" class="d-block w-100 image-mad-max imagen-top" ></button>
+              </div>
+              <div class="carousel-item">
+                    <button type="button" class="d-block w-100 image-trainspotting imagen-top" ></button>
+              </div>
+              <div class="carousel-item">
+                    <button type="button" class="d-block w-100 image-the-fight-club imagen-top" ></button>
+              </div>
+            </div>
+          </div>
+    
+    <section id="return-filter">
+
+    </section>
 
  <script src="data.js"></script> 
  <script src="main.js"></script>
-        
-
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
 </body>
 <footer>
 </footer>
