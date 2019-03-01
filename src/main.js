@@ -30,8 +30,9 @@ const drawMovies = (arrayMovies) => {
       <div class="movie-card">
         <p class="title">${dataMovies.Title}</p>
         <p class="plot">°${dataMovies.Plot}</p>
+        <p class="dir">Director: ${dataMovies.Director}</p></br>
         <img class="poster" src="${dataMovies.Poster}"/>
-        <p>${dataMovies.Director}</p>
+        
       </div>`;
       sectionRoot.insertAdjacentHTML("beforeend", movieData)
     })
