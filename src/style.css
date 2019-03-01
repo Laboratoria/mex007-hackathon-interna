@@ -13,7 +13,7 @@ html,body{
 
 }
 .image-pulp-fiction{
-    background-image: url(http://images.fanpop.com/images/image_uploads/Pulp-Fiction-poster-quentin-tarantino-75036_500_495.jpg);
+    background-image: url(https://ae01.alicdn.com/kf/HTB1fJlmPFXXXXXgapXXq6xXFXXXa/Custom-Canvas-Wall-Decals-Pulp-Fiction-Poster-Pulp-Fiction-Wallpaper-Uma-Thurman-Wall-Stickers-Mural-Christmas.jpg_640x640.jpg);
 
 }
 .image-the-shining{
@@ -44,11 +44,12 @@ nav i{
 .plot{
     float: right;
     position: absolute;
-    width: 40%;
+    width: 38%;
     margin-left: 52%;
     text-align: justify;
-    font-size:3.9vw;
+    font-size: 3vw;
     z-index: 5;
+    margin-top: 58px;
 
 }
     .movie-card{
@@ -72,6 +73,7 @@ nav i{
     float: left;
     height: 18em;
     margin-left: 2%;
+    margin-top: -16px;
 }
 #header {
     margin:auto;
@@ -87,6 +89,8 @@ ul, ol {
     margin: 0px;
     margin-left: 0%;
     padding: 0px;
+    display: block;
+    padding-top: 10px
 }
 
 .nav > li {
@@ -94,12 +98,12 @@ ul, ol {
 }
 
 .nav li {
-    background-color:#000;
-    color:#fff;
-    text-decoration:none;
-    display:block;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    display: block;
     width: 25%;
-    height: 2em;
+    height: 3em;
     text-align: center;
     padding-top: 3%;
 }
@@ -111,7 +115,7 @@ ul, ol {
 .nav li ul {
     display: none;
     position: absolute;
-    width: 100%;
+
     padding: 0px;
     margin-left: 18%;
     z-index: 6;
@@ -131,11 +135,16 @@ ul, ol {
     top:0px;
 }
 nav{
-    background: #2a3440;
     width: 100%;
-    height: 60px;
-    top: 0;
-    left: 0;
+    margin: 0px;
+    margin-left: 0%;
+    padding: 0px;
+    display: block;
+    position: relative;
+    z-index: 4;
+    height: 7em;
+    background-color: #2a3440;
+
  }
 
  #browser{
@@ -149,5 +158,64 @@ nav{
     z-index: 5
 
  }
+ .carousel{
+     position: absolute;
+     z-index: 3;
+ }
+ ul, ol {
+    list-style:none;
+}
 
+.nav {
+    width:500px;
+    margin:0 auto; 
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li {
+    background-color:#000;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+.nav li:hover {
+    background-color:#434343;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    padding: 0px;
+    margin-left: 71%;
+    z-index: 6;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+.style-nav{
+    width: 122%;
+    margin-left: 62%;
+    position: fixed;
+}
+.dir{
+    float: right;
+    font-size: 3vw;
+    margin-right: 8%;
+}
  
