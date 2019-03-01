@@ -6,7 +6,7 @@
 }
 
 body{
-    background: blueviolet;
+    background: black;
 }
 
 header{
@@ -33,6 +33,17 @@ h1, h2{
     font-size: 24px;
     text-align: center;
     color: #F7F2F2;
+}
+
+h3{
+    padding-top: 12px; 
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;  
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    color: #F7F2F2; 
 }
 
 .hide{
@@ -64,6 +75,14 @@ h1, h2{
 }
 
 #input-search {
+    margin-top: 15px; 
+    width: 250px;
+    float: left;
+    left: 12%;
+    border-radius: 8px;
+}
+
+#director-search{
     margin-top: 15px; 
     width: 250px;
     float: left;
@@ -110,8 +129,8 @@ h1, h2{
 .btn-footer {
     background-color: rgb(54, 54, 54);
     top: 5px;
-    height: 30px;
-    width: 30px;
+    height: 300px;
+    width: 100px;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -119,9 +138,13 @@ h1, h2{
 
 .btn-home {
     left: 35px;
-    background-image: url('./images/home-icon.png');
+    background-image: url('./home-icon.png')
+    background-size: 50%;
 }
 
+.poster {
+    height: 580px;
+}
 .btn-search {
     left: 140px;
     background-image: url('./images/magnifying_glass.png');
@@ -141,6 +164,41 @@ h1, h2{
     color: white;
     top: 27px;
 }
+
+.btn-category, .btn-type{
+    color: white;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    height: 90px;
+    width: 44%;
+
+}
+
+#Animation, #Comedy, #Musical{
+    background: #EB3F3F;
+}
+
+#Thriller, #Biography, #Romance, #Drama{
+    background: #C12365;
+}
+
+#Action, #Family, #Romance{
+    background: #F68602
+}
+
+#Horror, #Comedy, #Documentary, #movie{
+    background: #7735B9;
+}
+
+#Crime, #Fantasy, #Sci-Fi, #series{
+    background: #42AA27
+}
+
+#Adventure, #Mystery, #Short{
+    background: #EB3F68;
+}
+
 
 
 
