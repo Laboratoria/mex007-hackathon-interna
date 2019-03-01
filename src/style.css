@@ -31,6 +31,8 @@ nav{
     font-family: sans-serif;
     color: white;
     text-align: center;
+    
+    padding-top: 44px;
   }
 
 footer{
@@ -51,11 +53,31 @@ width: 90%;
 border-radius: 5%;
 }
 
+img{
+  width: 180px;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.data{
+  position: relative;
+  background-image: url(../src/assets/images/cajita.png);
+  background-size: cover;
+  background-position: center center;
+  width: 280px;
+  height: 420px;
+  color: rgb(244, 244, 248);
+  display: inline-block;
+  padding: 1%;
+  margin: 3%;
+  border-radius: 10%;
+
+}
+
 .container {
   box-sizing: border-box;
   width: 50%;
 }
-
 
 #top {
   display: none;
@@ -75,5 +97,3 @@ text-decoration: blink;
 font-family: sans-serif;
     padding: 4%;
 }
-
-
