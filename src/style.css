@@ -259,9 +259,9 @@ body{
     background-color: #2a3440;
     color: white;
     text-align: center;
-    font-size: 2vw;
-    padding-bottom: 30px;
-    height: 190px;
+    font-size: 1.8vw;
+    padding-bottom: 20px;
+    height: 160px;
     padding-top: 70px;
 }
 .movie-card{
@@ -288,7 +288,7 @@ body{
 
 .nav li {
     padding:10px 15px;
-    width: 672px;
+    width: 673px;
 }
 
 .nav li ul li {
