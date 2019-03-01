@@ -33,6 +33,12 @@ nav{
     text-align: center;
   }
 
+footer{
+  background: #50576a;
+  width: auto;
+  height: 100%;
+  text-align: center;
+}
 .logo{
   width: 70%;
   height:auto;
@@ -40,8 +46,9 @@ nav{
 
 .search{
   text-align: center;
-  opacity: 0.55;
-  width: 90%;
+opacity: 0.55;
+width: 90%;
+border-radius: 5%;
 }
 
 .container {
@@ -50,5 +57,12 @@ nav{
 }
 
 .btn{
+    background: #50576a;
+}
 
+.nav__item{
+  color: white;
+text-decoration: blink;
+font-family: sans-serif;
+    padding: 4%;
 }
