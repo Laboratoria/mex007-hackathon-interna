@@ -10,3 +10,44 @@
 .top{
   margin-top: 10vh;
 }
+
+.logo {
+  margin-top: 30%; 
+}
+
+.mi-btn{
+  width: 90%;
+  background: #FEE522;
+  color: black;
+}
+
+.register{
+  margin: 8% 8%;
+}
+
+#register, #login-text{
+  cursor: pointer;
+}
+
+.hide{
+  display: none;
+}
+
+#logo-img{
+  width: 900%;
+  height: 10vh;
+  background-image: url(../img/clapbn-01.png);
+  background-size: cover;
+}
+
+.mi-carr{
+  height: 50vh;
+}
+
+.muro{
+  background: black;
+}
+
+.t-area{
+  color: white
+}

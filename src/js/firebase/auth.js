@@ -66,7 +66,7 @@ if (window.location.pathname === '/src/views/login' || window.location.pathname 
       var errorCode = error.code;
       var errorMessage = error.message;
       M.toast({
-        html: 'Usuario no enconrado' + ' ' +errorMessage
+        html: 'Usuario no enconrado' + ' ' + errorMessage
       })
       // ...
     });
@@ -75,25 +75,25 @@ if (window.location.pathname === '/src/views/login' || window.location.pathname 
   loginBtn.addEventListener('click', logIn)
 
 
-document.getElementById('face-btn').addEventListener('click', () => {
-  var provider = new firebase.auth.FacebookAuthProvider();
-  firebase.auth().signInWithPopup(provider).then(function(result) {
-    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-    var token = result.credential.accessToken;
-    // The signed-in user info.
-    var user = result.user;
-    // ...
-  }).catch(function(error) {
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    // The email of the user's account used.
-    var email = error.email;
-    // The firebase.auth.AuthCredential type that was used.
-    var credential = error.credential;
-    // ...
-  });
-})
+  document.getElementById('face-btn').addEventListener('click', () => {
+    var provider = new firebase.auth.FacebookAuthProvider();
+    firebase.auth().signInWithPopup(provider).then(function (result) {
+      // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+      var token = result.credential.accessToken;
+      // The signed-in user info.
+      var user = result.user;
+      // ...
+    }).catch(function (error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // The email of the user's account used.
+      var email = error.email;
+      // The firebase.auth.AuthCredential type that was used.
+      var credential = error.credential;
+      // ...
+    });
+  })
 
 } // cierra funcionalidad de login 
 
@@ -101,13 +101,14 @@ const logOutBtn = document.getElementById('log-out')
 let provider = new firebase.auth.GoogleAuthProvider();
 
 
-console.log('cambio')
 
 firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
+ 
+
+    localStorage.setItem('user', JSON.stringify(user))
     // User is signed in.
     var user = firebase.auth().currentUser;
-    console.log(user)
     if (location.pathname === '/src/views/login' || window.location.pathname === "/privado/src/views/login.html") {
       location.href = './../views/muro.html'
     }
@@ -115,14 +116,11 @@ firebase.auth().onAuthStateChanged(function (user) {
 
   } else { //Si no esta logueado el usuario
     if (location.pathname === '/src/views/muro') {
-      console.log('esta en local sin usuario');
       location.href = './../views/login.html'
     }
     if (location.pathname === '/privado/src/views/muro.html') {
-      console.log('esta en repo sin usuario');
       location.href = './login.html'
     }
-    console.log('no hay usuario logeado')
     // No user is signed in.
   }
 });
@@ -166,9 +164,10 @@ logOutBtn.addEventListener('click', logOut)
 
 
 const printPerfil = (user) => {
-
   const printUser = document.getElementById('perfil')
   const name = document.getElementById('name')
+  const profile = document.getElementById('profile')
+
 
   let perfil = ` 
 <div class="background">
@@ -179,4 +178,5 @@ const printPerfil = (user) => {
   <a href="#email"><span class="white-text email"></span>${user.email}</span></a>`
   printUser.innerHTML = perfil
   name.innerHTML = user.displayName
+  profile.innerHTML = `<a href="#user"><img class="circle" src="${user.photoURL}"></a>`
 }

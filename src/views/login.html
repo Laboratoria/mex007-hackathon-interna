@@ -7,8 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../css/materialize.min.css">
+  <link rel="icon" type="image/png" href="../img/clapbn-01.png" />
   <link rel="stylesheet" href="../css/style.css">
-  <title>Movie App</title>
+  <title>Clap</title>
 </head>
 
 <body>
@@ -17,11 +18,9 @@
   <nav>
     <nav class="mi-nav">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Movie App</a>
+        <a href="#" class="brand-logo left"><i id="logo-img"></i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li id="log-out"><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">JavaScript</a></li>
+     
         </ul>
       </div>
     </nav>
@@ -30,74 +29,89 @@
   <!-- nav -->
 
   <div class="container ">
+    <div id="login-box">
+      <h5 class="center">Login</h5>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email-login" type="email" class="validate">
+              <label for="email-login">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password-login" type="password" class="validate">
+              <label for="password-login">Password</label>
+            </div>
+          </div>
+          <div class="center">
+            <button id="login-btn" class="  btn waves-effect mi-nav mi-btn " type="button" name="action">Login
+              <i class="material-icons right"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <hr>
+     <p class="center register">Or</p>
+      <div class="center">
+        <a id="googleBtn" class="waves-effect btn mi-nav"><i class="material-icons left"></i>Google</a>
+        <a id="face-btn" class="waves-effect btn mi-nav"><i class="material-icons left"></i>Facebook</a>
+      </div>
+      <div class="center register">
+          <p>Not login yet? <a id="register" href="#">Register</a></p>
+        </div>
+    </div>
 
     <!-- form -->
-    <ul class="collapsible z-depth-5 center top">
-      <li>
-        <div class="collapsible-header"><i class="material-icons">person_add</i>Sign In</div>
-        <div class="collapsible-body center">
-          <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s6">
-                  <input id="first_name" type="text" class="validate">
-                  <label for="first_name">First Name</label>
-                </div>
-                <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">Last Name</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="password" type="password" class="validate">
-                  <label for="password">Password</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
-                  <label for="email">Email</label>
-                </div>
-              </div>
-              <button id="sign-in" class="btn waves-effect mi-nav" type="button" name="action">Sign In
-                <i class="material-icons right">send</i>
-              </button>
 
-            </form>
-          </div>
-          <div>
-      </li>
-      <li>
-        <div class="collapsible-header"><i class="material-icons">person</i>Login</div>
-        <div class="collapsible-body center">
+    <div id="register-box" class="hide">
+      <div class="row">
+        <h5 class="center">Create new account</h5>
+        <form class="col s12">
           <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="email-login" type="email" class="validate">
-                  <label for="email-login">Email</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="password-login" type="password" class="validate">
-                  <label for="password-login">Password</label>
-                </div>
-              </div>
-              <button id="login-btn" class="btn waves-effect mi-nav" type="button" name="action">Login
-                <i class="material-icons right">send</i>
-              </button>
-            </form>
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
           </div>
-        </div>
-      </li>
-    </ul>
-
-    <div class="center">
-      <a id="googleBtn" class="waves-effect btn mi-nav"><i class="material-icons left"></i>Google</a>
-      <a id="face-btn" class="waves-effect btn mi-nav"><i class="material-icons left"></i>Facebook</a>
+          <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="center">
+            <button id="sign-in" class="btn waves-effect mi-nav mi-btn" type="button" name="action">Register
+              <i class="material-icons right"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="center register">
+        <p>Already have an account? <a id="login-text" href="#">Login</a></p>
+      </div>
     </div>
+    <!-- <li> -->
+    <!-- <div class="collapsible-header"><i class="material-icons">person</i>Login</div>
+    <div class="collapsible-body center">
+
+    </div>
+    </li>
+    </ul>
+-->
+
+
 
 
     <!-- form -->

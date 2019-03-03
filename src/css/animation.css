@@ -79,25 +79,25 @@ animation-delay: 1.2s;
 @-moz-keyframes fadecolor
 {
 0% {border-bottom-color: #eee;}
-100%{border-bottom-color: #67cbf0;}
+100%{border-bottom-color: #56F794;}
 }
 
 @-webkit-keyframes fadecolor
 {
 0% {border-bottom-color: #eee;}
-100%{border-bottom-color: #67cbf0;}
+100%{border-bottom-color: #56F794;}
 }
 
 @-ms-keyframes fadecolor
 {
 0% {border-bottom-color: #eee;}
-100%{border-bottom-color: #67cbf0;}
+100%{border-bottom-color: #56F794;}
 }       
 
 @keyframes fadecolor
 {
 0% {border-bottom-color: #eee;}
-100%{border-bottom-color: #67cbf0;}
+100%{border-bottom-color: #56F794;}
 }
 
 
@@ -105,4 +105,12 @@ h1{
   color: #eee;
   text-align: center;
   margin-top: 20%;
+}
+
+.claq{
+  background-image: url(../img/clapbn-01.png);
+  background-size: cover;
+  width: 90%;
+  height: 14vh;
+  margin-top: 20vh;
 }
