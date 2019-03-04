@@ -178,5 +178,5 @@ const printPerfil = (user) => {
   <a href="#email"><span class="white-text email"></span>${user.email}</span></a>`
   printUser.innerHTML = perfil
   name.innerHTML = user.displayName
-  profile.innerHTML = `<a href="#user"><img class="circle" src="${user.photoURL}"></a>`
+  // profile.innerHTML = `<a href="#user"><img class="circle" src="${user.photoURL}"></a>`
 }
