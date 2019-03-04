@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>Sci-Filos</title>
+
+</head>
+
+<body>
+  <div id="root">
+    <!-- Sección que contiene el logo de la app y el buscador -->
+    <header class="fixed-top">
+      <img src="assets/images/sciFilos.png" alt="Sci-Filos" class="logo">
+    </header>
+
+    <nav class="search"><input type="search" class="search" id="search" placeholder="BÚSQUEDA" /> </nav>
+
+
+    <span id="movies-sci-fi-filter">
+    </span>
+    <!-- Sección que contiene el inicio con la recomendación del día -->
+    <section class="recommendation" id="recommendation">
+      <h2>TENDENCIAS</h2>
+      <div class="container">
+        <div id="carouselExampleInterval" class="carousel slide mx-auto" data-ride="carousel" style="width: 250px;">
+          <div class="carousel-inner">
+            <div class="carousel-item active " data-interval="2000">
+              <img src="https://m.media-amazon.com/images/M/MV5BY2IzNGNiODgtOWYzOS00OTI0LTgxZTUtOTA5OTQ5YmI3NGUzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
+                class="d-block w-100 rounded-lg mx-auto" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="3000">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTUyNTI4NTIwNl5BMl5BanBnXkFtZTgwMjQ4MTI0NDE@._V1_SX300.jpg"
+                class="d-block w-100 rounded-lg" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="3000">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTExMzU0ODcxNDheQTJeQWpwZ15BbWU4MDE1OTI4MzAy._V1_SX300.jpg"
+                class="d-block w-100 rounded-lg" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="3000">
+              <img src="https://m.media-amazon.com/images/M/MV5BMjAzMTI1MjMyN15BMl5BanBnXkFtZTgwNzU5MTE2NjM@._V1_SX300.jpg"
+                class="d-block w-100 rounded-lg" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="3000">
+              <img src="https://m.media-amazon.com/images/M/MV5BMjAwNTE3MjQ2M15BMl5BanBnXkFtZTgwNjgzNjk2NDM@._V1_SX300.jpg"
+                class="d-block w-100 rounded-lg" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="3000">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTQ5NTI2NTI4NF5BMl5BanBnXkFtZTcwNjk2NDA2OQ@@._V1_SX300.jpg"
+                class="d-block w-100 rounded-lg" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="3000">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTUxNzc0OTIxMV5BMl5BanBnXkFtZTgwNDI3NzU2NDE@._V1_SX300.jpg"
+                class="d-block w-100 rounded-lg" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="3000">
+              <img src="https://m.media-amazon.com/images/M/MV5BMzkwMWNmMmUtYTQ2NS00ZDM3LWJhZjctMGI1M2U4YWI2NGE0XkEyXkFqcGdeQXVyMjMyMjA0NTA@._V1_SX300.jpg"
+                class="d-block w-100 rounded-lg" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="3000">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTY1NjkwNDQ0NF5BMl5BanBnXkFtZTgwMTkyOTE2NjE@._V1_SX300.jpg"
+                class="d-block w-100 rounded-lg" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="all-data" id="data-filter">
+    </section>
+    <!-- Sección que contiene el top 10 -->
+    <section class="top" id="top">
+      <h2>TOP 10</h2>
+      <!-- Rating Stars -->
+      <div id='rating'>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <span id="section-top">
+      </span>
+    </section>
+
+
+
+    <!-- Sección que contiene la sinopsis y ficha técnica del top 10 -->
+
+
+    <!-- Sección que contiene los estrenos -->
+    <section class="new" id="new">
+      <h2>LANZAMIENTOS</h2>
+      <span id="section-premier">
+      </span>
+    </section>
+
+
+
+
+    <footer>
+
+      <div class="fixed-bottom">
+        <a href="#recommendation" class="nav__item sin-hover" id="home"><i class="fas fa-home"></i></a>
+        <a href="#top" class="nav__item sin-hover" class="text-secondary" id="imdbRating"><i class="fas fa-star"></i></a><!--  <button type="button" class="btn"></button>-->
+        <a href="#new" class="nav__item sin-hover" id="Year"><i class="fas fa-rocket"></i></a>
+      </div>
+
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <script src="data.js"></script>
+</body>
+
+</html>
