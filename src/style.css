@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #111016;
+    color:#fff;
+}  
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+.header{
+width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-align: center;
+  height: 80px;
+  line-height: 30px;
+  background-color: #111016 ;
+  z-index: 3;
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.title{
+    font-size: 1.6rem;
+    }
+    .main{
+    width: 100%;
+    margin-top:80px;
+    padding: 0 10px;
+    
+    }
+.filter-movie{
+text-align: center;
+}
+.general-filter{
+    display: inline-block;
+    width: 60%;
+    height: 35px;
+    margin-bottom: 30px;
+    padding-left: 5px;
+    
+}
+.input[type="text"]{
+    background-image: url('./images/search.svg');
+    height: 40px;
+    width: 25%;
+    padding-left: 30px;
+    -webkit-background-size: 25px auto;
+    background-size: 25px auto;
+    background-repeat: no-repeat;
+    background-position: 1% 50%;
+    font-family: 'Jacques Francois', serif;
+}
+.btn-search{
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #111016;
+    background-color: #41dd8a;
+    height: 40px;
+    color: #fff;
+    border: none;
+    font-size: .8em;
+    padding: .8em 1.4em;
+    margin-left: -5px;
+    text-transform: uppercase;
+}
+.mood{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.btn-mood {
+    display: block;
+    cursor: pointer;
+    min-width: 130px;
+    height: 130px;
+    line-height: 180px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #f5f5f5;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 1em;
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    background-size: 45px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    max-width: 150px;
+    margin: 0;
+    color: #fff;
+}
+.romance{
+    background-color: #c42860;
+    background-image: url('./images/home/like.svg');
+    background-repeat: no-repeat;
+}
+.comedy{
+    background-color: #ffaf13;
+    background-image: url('./images/home/happy.svg');
+    background-repeat: no-repeat;
+
+}
+.futurista{
+    background-color: #484B8d;
+    background-image: url('./images/home/futur.svg');
+
+}
+.horror{
+    background-color: #ce1032;
+    background-image: url('./images/home/valiente.svg');
+
+}
+.aventurero{
+    background-color: #ff6e1d;
+    background-image: url('./images/home/avent.svg');
+
+}
+.drama{
+    background-color: #567b96;
+    background-image: url('./images/home/nost.svg');
+
+}
+.results{
+ margin-bottom: 220px;
+}
+.results div{
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    vertical-align: top;
+    display: inline-block;
+    background-color: rgba(156, 156, 156, 0.37);
+} 
+.results div img{
+    width: 100%;
+    border-radius: 10px;
+} 
+.results div p{
+    width: 100%;
+    border-radius: 10px;
+    font-size:1.2rem;
+} 
+nav h1{
+    margin:0;
+    line-height: 80px;
+} 
+.romantico,
+.Alegre,
+.Futurista,
+.Valiente,
+.Aventurero,
+.Nostalgico{
+    height: 80px;
+}
+.romantico{
+    background: #c42860;
+}
+.Alegre{
+    background: #ffaf13;
+}
+.Futurista{
+    background:#484B8d;
+}
+.Valiente{
+    background:#ce1032;
+}
+.Aventurero{
+    background:#ff6e1d;
+
+}
+.Nostalgico{
+    background:#567b96;
+}
+.hide{
+    display: none;
+}
+
+/* hover en peliculas*/
+#plot {
+    position: absolute;
+    color: white;
+    z-index: -12;
+    width: 71%;
+    font-size: 128%;
+    text-align: center;
+    margin-top: 19%;
+    margin-left: 13%;
+ }
+ #im:hover {
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+ }
+

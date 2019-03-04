@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie mood</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Indeci-issues</h1>
+        <nav> 
+        </nav>
+    </header>
+    <main class="main">
+    <section class="filter-movie">
+        <h3>¡Cuáles tu mood hoy!</h3>
+        <input id= "searcher" class="general-filter" type="text" placeholder="Elige tu pelicula favorita">
+        <a id='btn' class="btn-search">buscar</a>
+        <section id="btn-hide">
+        <div class="mood">
+            <a href="romantic.html" data-mood="romantico"  id="Romance" class="btn-mood romance">Romantico</a>
+            <a href="romantic.html" data-mood="Alegre" id="Comedy" class="btn-mood comedy" >Alegre</a>
+        </div>
+        <div class="mood">
+            <a href="romantic.html" data-mood="Futurista" id="Adventure" class="btn-mood futurista" >Futurista</a>
+            <a href="romantic.html" data-mood="Valiente" id="Horror" class="btn-mood horror" >Valiente</a>
+        </div>
+        <div class="mood">
+            <a href="romantic.html" data-mood="Aventurero" id="Action" class="btn-mood aventurero" >Aventurero</a>
+            <a href="romantic.html" data-mood="Nostalgico" id="Drama" class="btn-mood drama" >Nostalgico</a>
+        </div>
+        </section>
+    </section>
+    <section id= "results" class="results">
+        </section>
+    </main>
+   
+    <script src="main.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
