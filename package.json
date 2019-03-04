@@ -1,0 +1,22 @@
+{
+  "name": "ls",
+  "version": "1.0.0",
+  "description": "## Índice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiaramirez/mex007-hackathon-interna.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claudiaramirez/mex007-hackathon-interna/issues"
+  },
+  "homepage": "https://github.com/claudiaramirez/mex007-hackathon-interna#readme",
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
+}
